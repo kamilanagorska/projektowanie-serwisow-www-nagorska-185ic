@@ -5,11 +5,6 @@ body {
     background-color: #a3a3c2;
     overflow: hidden;
   }
-  .header {
-    color: #29293d;
-    text-align: center;
-    letter-spacing: 3px;
-  }
   .navigationbar a {
     float: left;
     color: #e0e0eb;
@@ -22,4 +17,15 @@ body {
   .navigationbar a:hover {
     background-color: #e0e0eb;
     color: black;
+  }
+  .header {
+    color: #29293d;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 50px;
+  }
+  .description {
+    color: black;
+    text-align: center;
+    font-size: 15px;
   }
