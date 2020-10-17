@@ -3,7 +3,11 @@
 **Grupa:** 185IC B2
 
 ### Laboratorium 1 
-Prosta strona internetowa...
+Prosta strona internetowa zawierająca trzy podstrony:
+- strona z listem 
+- strona z podręcznika
+- strona z formularzem.
+Do wykonania projektu wykorzystany został HTML, CSS i JS.
 ### Laboratorium 2
 *cdn...*
 ### Laboratorium 3
