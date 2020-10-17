@@ -1,3 +1,4 @@
+
 body {
   background-color: #d1d1e0;
 }
@@ -18,14 +19,30 @@ body {
     background-color: #e0e0eb;
     color: black;
   }
+
   .header {
     color: #29293d;
     text-align: center;
     letter-spacing: 3px;
-    font-size: 50px;
+    font-size: 60px;
   }
   .description {
     color: black;
-    text-align: center;
+   text-align: center;
     font-size: 15px;
+    padding: 50px 200px;
+  }
+
+  .foot {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    background-color: #a3a3c2;
+    text-align: center;
+    color: #29293d;
+    padding: 70px 0;
+  }
+  .footimage {
+    opacity: 0.5;
+    width: 50px;
   }
