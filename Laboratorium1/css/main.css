@@ -1,8 +1,15 @@
+body {
+  background-color: #d1d1e0;
+}
 .navigationbar {
     background-color: #a3a3c2;
     overflow: hidden;
   }
-  
+  .header {
+    color: #29293d;
+    text-align: center;
+    letter-spacing: 3px;
+  }
   .navigationbar a {
     float: left;
     color: #e0e0eb;
