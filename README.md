@@ -1,8 +1,8 @@
 ## projektowanie-serwisow-www-nagorska-185ic
-### **Autor:** Kamila Nagórska
-### **Grupa:** 185IC B2
+**Autor:** Kamila Nagórska
+**Grupa:** 185IC B2
 
-## **Lab 1** 
+### Lab 1 
 Prosta strona internetowa...
 ## **Lab 2** 
 *cdn...*
