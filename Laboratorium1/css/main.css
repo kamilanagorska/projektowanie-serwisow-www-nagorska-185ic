@@ -19,10 +19,10 @@ body {
     background-color: #e0e0eb;
     color: black;
   }
-#font1 {
+.font1 {
   font-family: 'Athiti';
 }
-#font2 {
+.font2 {
   font-family: 'Dancing Script';
 }
 .header {
@@ -62,7 +62,7 @@ body {
   padding: 0 80px;
   color: #29293d;
 }
-#indent {
+.indent {
   text-indent: 20px;
 }
 .sign {
@@ -92,6 +92,9 @@ transform: scale(1.1);
   .footimage {
     opacity: 0.5;
     width: 50px;
+  }
+  .footimage:hover {
+    opacity: 0.2;
   }
   .footie {
     font-family: 'Bad Script';
