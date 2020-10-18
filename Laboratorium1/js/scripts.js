@@ -1,6 +1,5 @@
 var myId = 0;
 slides();
-
 function slides() {
     var i;
     var x = document.getElementsByClassName("images");
@@ -12,3 +11,4 @@ function slides() {
     x[myId-1].style.display = "block";
     setTimeout(slides, 5000);
 }
+
