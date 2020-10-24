@@ -11,7 +11,7 @@ function slides() {
     x[myId-1].style.display = "block";
     setTimeout(slides, 5000);
 }
-var button = document.getElementById("button");
+var button = document.getElementById("button1");
 button.addEventListener("click", function() {
     var y = document.getElementById("hideImage");
         if(y.style.display === "none"){

@@ -1,4 +1,4 @@
-/*calastrona*/
+/*cala strona*/
 body {
   background-color: #d1d1e0;
 }
@@ -27,6 +27,10 @@ body {
 .font2 {
   font-family: 'Dancing Script';
 }
+.font3 {
+  font-family: 'Bad Script'
+}
+/*naglowek glownej*/
 .header {
   color: #666699;
   text-align: center;
@@ -34,13 +38,14 @@ body {
   font-size: 60px;
   font-weight: bold;
 }
+/*opis na glownej*/
 .description {
   color: black;
   text-align: center;
   font-size: 15px;
   padding: 0 20px 70px 20px;
-
   }
+/*guzik z glownej*/
 .button {
   background-color: #8585ad;
   color:#e0e0eb;
@@ -49,12 +54,13 @@ body {
   padding: 12px 28px;
   font-size: 17px;
   cursor: pointer;
-  display: block; /*wysrodkowanie*/
-  margin: 0 auto 70px auto; /*totez (top,prawo,dol,lewo)*/
+  display: block; /*generuje pudelko elementu blokowego*/
+  margin: 0 auto 70px auto; /*(top,prawo,dol,lewo)*/
 }
 .button:hover{
   color:black;
 }
+/*obraz z glownej*/
 #hideImage {
   width: 30%;
   margin: 0 auto 70px auto;
@@ -62,6 +68,7 @@ body {
   border: 5px solid #e0e0eb;
   opacity: 0.9;
 }
+/*tło listu*/
 .letter {
   margin: 100px;
   border: 1px solid gray;
@@ -86,6 +93,7 @@ body {
   padding: 0 80px;
   color: #29293d;
 }
+/*wciecie*/
 .indent {
   text-indent: 20px;
 }
@@ -95,12 +103,14 @@ body {
   font-weight: bold;
   color: #a3a3c2;
 }
+/*ulozenie obrazka*/
 .wrap{
   margin: 80px
 }
 .wrap:hover{
 transform: scale(1.1);
 }
+/*wszystkie boki sie zmieniają w czasie 300ms*/
 .lakeImage{
   transition: all 300ms;
 }
@@ -119,7 +129,4 @@ transform: scale(1.1);
 }
 .footimage:hover {
   opacity: 0.2;
-  }
-.footie {
-  font-family: 'Bad Script';
   }
