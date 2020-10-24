@@ -1,24 +1,26 @@
-
+/*calastrona*/
 body {
   background-color: #d1d1e0;
 }
+/*pasek na gorze*/
 .navigationbar {
     background-color: #a3a3c2;
-    overflow: hidden;
+    overflow: hidden; /*co sie nie zmiesci jest ukryte*/
   }
-  .navigationbar a {
+/*tekst w pasku*/
+.navigationbar a {
     float: left;
     color: #e0e0eb;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 14px 16px; /*gora prawp dol lewo*/
+    text-decoration: none; /*usuwa podkreslenie*/
     font-size: 17px;
-  }
-  /* jak sie najedzie to zmiana koloru */
-  .navigationbar a:hover {
+}
+/* jak sie najedzie to zmiana koloru */
+.navigationbar a:hover {
     background-color: #e0e0eb;
     color: black;
-  }
+}
 .font1 {
   font-family: 'Athiti';
 }
@@ -26,18 +28,40 @@ body {
   font-family: 'Dancing Script';
 }
 .header {
-  color: #29293d;
+  color: #666699;
   text-align: center;
   letter-spacing: 3px;
   font-size: 60px;
+  font-weight: bold;
 }
 .description {
   color: black;
   text-align: center;
   font-size: 15px;
-  padding: 50px 200px;
-  }
+  padding: 0 20px 70px 20px;
 
+  }
+.button {
+  background-color: #8585ad;
+  color:#e0e0eb;
+  border: none;
+  text-align: center;
+  padding: 12px 28px;
+  font-size: 17px;
+  cursor: pointer;
+  display: block; /*wysrodkowanie*/
+  margin: 0 auto 70px auto; /*totez (top,prawo,dol,lewo)*/
+}
+.button:hover{
+  color:black;
+}
+#hideImage {
+  width: 30%;
+  margin: 0 auto 70px auto;
+  border-radius: 7px;
+  border: 5px solid #e0e0eb;
+  opacity: 0.9;
+}
 .letter {
   margin: 100px;
   border: 1px solid gray;
@@ -50,12 +74,12 @@ body {
   color: #666699;
 }
 .letterhead {
-    font-size: 50px;
-    text-align: left;
-    padding-left: 80px;
-    font-weight: bolder;
-    color: #7575a3;
-    text-shadow: 1px 1px;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 80px;
+  font-weight: bolder;
+  color: #7575a3;
+  text-shadow: 1px 1px;
 }
 .lettertext {
   font-size: 20px;
@@ -80,22 +104,22 @@ transform: scale(1.1);
 .lakeImage{
   transition: all 300ms;
 }
-  .foot {
-    width: 100vw;
-    display: block;
-    overflow: hidden;
-    background-color: #a3a3c2;
-    text-align: center;
-    color: #29293d;
-    padding: 70px 0;
+.foot {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  background-color: #a3a3c2;
+  text-align: center;
+  color: #29293d;
+  padding: 70px 0;
+}
+.footimage {
+  opacity: 0.5;
+   width: 50px;
+}
+.footimage:hover {
+  opacity: 0.2;
   }
-  .footimage {
-    opacity: 0.5;
-    width: 50px;
-  }
-  .footimage:hover {
-    opacity: 0.2;
-  }
-  .footie {
-    font-family: 'Bad Script';
+.footie {
+  font-family: 'Bad Script';
   }

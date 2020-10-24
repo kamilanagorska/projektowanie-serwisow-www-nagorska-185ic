@@ -2,43 +2,50 @@
 <html lang="pl">
 <!--Polskie znaki-->
 <head>
-<meta charset="UTF-8"> 
-<!--Dzialanie na wszystkich urzadzeniach i rozdzielczosciach-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/main.css">
-<link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Bad%20Script' rel='stylesheet'>
+    <meta charset="UTF-8"> 
+    <!--Dzialanie na wszystkich urzadzeniach i rozdzielczosciach-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--plik css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--użyte czcionki-->
+    <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bad%20Script' rel='stylesheet'>
+    <title>Strona Główna</title>
 </head>
 <body>
-    <div class = "navigationbar">
+    <div class = "navigationbar font1">
         <a href="index.html">Główna</a>
         <a href ="list.html">List</a>
         <a href="podrecznik.html">Podręcznik</a>
         <a href ="formularz.html">Formularz</a>
     </div>
-<section>
-    <img class="images" src="images/lake_1.jpg" style="width: 100%;" alt="Lake 1">
-    <img class="images" src="images/lake_2.jpg" style="width: 100%;" alt="Lake 2">
-    <img class="images" src="images/lake_3.jpg" style="width: 100%;" alt="Lake 3">
-</section>
-<section>
-    <p class="header" id="font1">Witaj<p>
-    <p class="description font1">Jest to moja pierwsza strona utworzona za pomocą HTML, CSS i JS. 
-        Wcześniej jedynie w gimnazjum miałam styczność z HTML, ale były to bardzo proste strony zawierające jedynie tekst i obrazek.
-        Cieszę się, że mogę pogłębić swoją wiedzę na temat serwisów internetowych. Jest to bardzo ciekawy temat. Tworzenie
-        stron jest całkiem przyjemne. Można wykorzystać swoją kreatywność. Chciałabym mieć troszkę więcej tekstu na stronie, dlatego
-        piszę ten długi tekst. Spędziłam kilka godzin na robieniu tej strony głównej. Napotkałam kilka problemów spowodowanych własną nieuwagą, ale
-        na szczęście wszystkie udało mi się rozwiązać. Jestem dość zadowolona z wyglądu mojego projektu, jednak mam nadzieję, że z czasem strony będą
-        wychodziły mi lepiej. 
-    </p>
-</section>
-<footer class="foot">
-<p>
-    <p class="footie">Kamila Nagórska, 2020</p>
-    <a href='https://github.com/kamilanagorska'><img class="footimage" src="images/logo.png" alt="GitHub logo"></a>
-    </p>
-</footer>
-
-<script src="js/scripts.js"></script>
+    <div>
+        <img class="images" src="images/lake_1.jpg" style="width: 100%;" alt="Jezioro 1">
+        <img class="images" src="images/lake_2.jpg" style="width: 100%;" alt="Jezioro 2">
+        <img class="images" src="images/lake_3.jpg" style="width: 100%;" alt="Jezioro 3">
+    </div>
+    <div>
+        <p class="font1 header">Witaj<p>
+        <p class="description font1">
+            Nazywam się Kamila Nagórska i mam 21 lat. Interesuje się sztuką. Kocham rysować i malować. Najczęściej do swoich prac używam 
+            ołówków i akwareli, lecz chciałabym również nauczyć się korzystać z farb akrylowych i olejnych. Słucham bardzo dużo muzyki. Moimi ulubionymi wykonawcami są 
+            między innymi My Chemical Romance, The Cure, Melanie Martinez, Falling in Reverse, Black Veil Brides i wiele innych. Artyści, których słucham inspirują mnie 
+            do tworzenia i wyrażania siebie nie tylko poprzez sztukę, ale też np. poprzez ubiór czy fryzurę.
+            <br> 
+            <br>
+            Jest to moja pierwsza strona utworzona za pomocą HTML, CSS i JS. Wcześniej jedynie w gimnazjum miałam styczność z HTML, ale były to bardzo proste strony 
+            zawierające tylko tekst i obrazek. Cieszę się, że mogę pogłębić swoją wiedzę na temat serwisów internetowych. Uważam, że jest to bardzo ciekawy temat. Jak na
+            pierwszy raz jestem dość zadowolona z wyglądu mojego projektu, jednak mam nadzieję, że z czasem strony będą wychodziły mi lepiej. 
+        </p>
+    </div>
+    <button type="button" id="button" class="button font1">Kliknij, by zobaczyć zdjęcie</button> 
+    <img id="hideImage" src="images/hair.jpg" style="display:none" alt="Zdjęcie">
+    <footer class="foot">
+        <p class="footie">
+            Kamila Nagórska, 2020
+        </p>
+        <a href='https://github.com/kamilanagorska'><img class="footimage" src="images/logo.png" alt="GitHub logo"></a>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
