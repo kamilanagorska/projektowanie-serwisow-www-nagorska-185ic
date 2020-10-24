@@ -33,6 +33,9 @@ body {
 .font4 {
   font-family: 'Amiko';
 }
+.font5 {
+  font-family: 'Stint Ultra Expanded';
+}
 /*naglowek glownej*/
 .header {
   color: #666699;
@@ -156,7 +159,26 @@ transform: scale(1.1);
 .charts:hover {
   opacity: 0.5;
 }
-
+#headForm {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f0f0f5;
+}
+#headerForm {
+  font-size: 35px;
+  color:#7575a3;
+  text-align: center;
+  padding-top: 20px;
+}
+#descriptionForm {
+  font-size: 15px;
+  color:#29293d;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 footer {
   width: 100vw;
   display: block;

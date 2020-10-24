@@ -1,31 +1,43 @@
 <!DOCTYPE html> 
-<html>
+<html lang="pl">
 <!--Polskie znaki-->
 <head>
 <meta charset="UTF-8"> 
 <!--Dzialanie na wszystkich urzadzeniach i rozdzielczosciach-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
-<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bad%20Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Stint%20Ultra%20Expanded' rel='stylesheet'>
+<title>Formularz</title>
 </head>
-
 <body>
-    <div class = "navigationbar">
+    <div class = "navigationbar font1">
         <a class="active" href="index.html">Główna</a>
         <a href ="list.html">List</a>
         <a href="podrecznik.html">Podręcznik</a>
         <a href ="formularz.html">Formularz</a>
     </div>
-    <section>
-        <p class="header">Tu będzie formularz<p>
-        <p class="description"> Formularz
+    <div id="headForm" class="font5">
+        <p id="headerForm">Zapisz się na darmowy kurs HTML<p>
+        <p id="descriptionForm">
+            Skorzystaj z wiedzy naszych specjalistów i uzyskaj darmowe szkolenie i konsultacje. Już
+            dziś zapisz się na całkowiecie darmowy kurs HTML5. O szczegółach poinformujemy się w 
+            emailu. Nie zapomnij dokładnie sprawdzić podanych danych!
         </p>
-    </section>
-    <footer class="foot">
-        <p>
-            <p class="footie">Kamila Nagórska, 2020</p>
-            <a href='https://github.com/kamilanagorska'><img class="footimage" src="images/logo.png"></a>
-        </p>
-        </footer>
+    </div>
+    <form>
+        <label for="fname">
+            Imię:
+        </label><br>
+        <input type="text" id="fname" name="fname" value="Imię"><br>
+        
+    </form>
+    <footer>
+        <p class="font3">
+            Kamila Nagórska, 2020
+        </p>   
+        <a href='https://github.com/kamilanagorska'><img class="footimage" src="images/logo.png" alt="GitHub logo"></a>
+    </footer>
 </body>
 </html>
