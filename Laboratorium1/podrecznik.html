@@ -1,31 +1,381 @@
 <!DOCTYPE html> 
-<html>
+<html lang="pl">
 <!--Polskie znaki-->
 <head>
 <meta charset="UTF-8"> 
 <!--Dzialanie na wszystkich urzadzeniach i rozdzielczosciach-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
-<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bad%20Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
+<title>Podręcznik</title>
 </head>
-
 <body>
-    <div class = "navigationbar">
+    <div class = "navigationbar font1">
         <a class="active" href="index.html">Główna</a>
         <a href ="list.html">List</a>
         <a href="podrecznik.html">Podręcznik</a>
         <a href ="formularz.html">Formularz</a>
     </div>
-    <section>
-        <p class="header">Tu będzie podręcznik<p>
-        <p class="description"> Podręcznik
+    <div class="page font4">
+        <p class="bookTitle">
+           Rozdział 2.
+            <br>
+            Ruch jednostajny prostoliniowy
         </p>
-    </section>
-    <footer class="foot">
-        <p>
-            <p class="footie">Kamila Nagórska, 2020</p>
-            <a href='https://github.com/kamilanagorska'><img class="footimage" src="images/logo.png"></a>
+        <p class="bookText">
+            Ruchem jednostajnym prostoliniowym nazywamy taki ruch ciała po linii prostej, 
+            podczas którego wartość prędkości nie zmienia się, czyli: 
         </p>
-        </footer>
+        <!--MathML-->
+        <div class="formula">
+            <math> 
+                <mrow> <!--poziomy rząd-->
+                    <mi>v</mi> <!--nazwy zmiennych, funkcje-->
+                    <mo>=</mo> <!--operacje matematyczne-->
+                    <mi>const</mi>
+                </mrow>
+            </math>
+        </div>
+        <p class="bookText">
+            Zatem w ruchu jednostajnym, na każdym odcinku drogi prędkość chwilowa jest taka 
+            sama i jest równa prędkości średniej 
+            <math>
+                <mrow>
+                    <msub>
+                        <mi>v</mi>
+                        <mi>śr</mi>
+                    </msub>
+                </mrow>
+            </math>, 
+            stosując wzór na prędkość średnią otrzymujemy:
+        </p>
+        <div class="formula">
+            <math>
+                <mrow>
+                    <mi>v</mi>
+                    <mo>=</mo>
+                    <mfrac> <!--pierwiastek-->
+                        <mrow>
+                            <mi>s</mi>
+                            <mo>-</mo>
+                            <msub> <!--indeks dolny-->
+                                <mi>s</mi>
+                                <mn>0</mn> <!--cyfry-->
+                            </msub>
+                        </mrow>
+                        <mrow>
+                            <mi>t</mi>
+                            <mo>-</mo>
+                            <msub>
+                                <mi>t</mi>
+                                <mn>0</mn>
+                            </msub>
+                        </mrow>
+                    </mfrac>
+                </mrow>
+            </math>
+        </div>
+        <p class="bookText">
+            Na ogół przyjmujemy, że 
+            <math>
+                <mrow>
+                    <msub>
+                        <mi>t</mi>
+                        <mn>0</mn>
+                    </msub>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </mrow>
+            </math>.
+            Pozwala nam to zapisać 
+            <math>
+                <mrow>
+                    <mi>s</mi>
+                    <mo>-</mo>
+                    <msub>
+                        <mi>s</mi>
+                        <mn>0</mn>
+                    </msub>
+                    <mo>=</mo>
+                    <mi>vt</mi>
+                </mrow>
+            </math>,
+            a stąd:
+        </p>
+        <div class="formula">
+            <math>
+                <mrow>
+                    <mi>s</mi>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>s</mi>
+                        <mn>0</mn>
+                    </msub>
+                    <mo>+</mo>
+                    <mi>vt</mi>
+                </mrow>
+            </math>
+        </div>
+        <p class="bookText">
+            W opisie ruchu jednostajnego równanie to jest ważne, gdyż pozwala wyznaczyć położenie w chwili 
+            t, jeżeli położenie początkowe w chwili
+            <math>
+                <mrow>
+                    <msub>
+                        <mi>t</mi>
+                        <mn>0</mn>
+                    </msub>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </mrow>
+            </math> 
+            wynosiło
+            <math>
+                <mrow>
+                    <msub>
+                        <mi>s</mi>
+                        <mn>0</mn>
+                    </msub>
+                </mrow>
+            </math>. 
+            <br>
+            Zależność położenia s od czasu jest funkcją liniową, której wykres przedstawiono na wykresie poniżej.
+        </p>
+        <a href="images/wykres1.png" target="_blank"><img class="charts" src="images/wykres1.png" style="width: 35%" alt="wykres1"></a>
+        <p class="bookText">
+            Jak wiadomo z matematyki, funkcja liniowa jest wyrażona za pomocą wzoru:
+        </p>
+        <div class="formula">
+            <math>
+                <mrow>
+                    <mi>y</mi>
+                    <mo>=</mo>
+                    <mn>ax</mn>
+                    <mo>+</mo>
+                    <mn>b</mn>
+                </mrow>
+            </math>
+        </div>
+        <p class="bookText">
+            Wzór na s podany wyżej ma podobną postać. Widać to wyraźnie, gdy napiszemy
+            go w następujący sposób:
+        </p>
+        <div class="formula">
+            <math>
+                <mrow>
+                    <mi>s</mi>
+                    <mo>=</mo>
+                    <mi>vt</mi>
+                    <mo>+</mo>
+                    <msub>
+                        <mi>s</mi>
+                        <mn>0</mn>
+                    </msub>
+                </mrow>
+            </math>
+        </div>
+        <p class="bookText">
+            (odpowiednikiem zmiennej y jest położenie s, a odpowiednikiem zmiennej x jest czas t; podobnie 
+            odpowiednikiem współczynnika kierunkowego a jest stała prędkość v, zaś odpowiednikiem wyrazu wolnego 
+            b jest początkowe położenie 
+            <math>
+                <mrow>
+                    <msub>
+                        <mi>s</mi>
+                        <mn>0</mn>
+                    </msub>
+                </mrow>
+            </math>).
+            <br><br>
+            Wiemy, że ta funkcja na wykresie przedstawiona jest jako prosta nachylona do osi czasu pod kątem tym większym, 
+            im większa jest wartość prędkości ciała v, gdyż współczynnik kierunkowy tej prostej jest równy v. Na poniższym 
+            wykresie przedstawiono tę zależność dla przypadku, gdy prędkość jest zwrócona w stronę malejących wartości s 
+            (przed v należy wtedy wstawić znak minus, gdyż v oznacza tutaj wartość wektora prędkości) – wtedy prosta na 
+            wykresie jest skierowana „w dół”.
+        </p>
+        <a href="images/wykres2.png" target="_blank"><img class="charts" src="images/wykres2.png" style="width: 35%" alt="wykres2"></a>
+        <div class="example">
+            <p class="bookTitle">
+                Przykład 1
+            </p>
+            <p class="bookText">
+                Przypuśćmy, że samochód w chwili 
+                <math>
+                    <mrow>
+                        <msub>
+                            <mi>t</mi>
+                            <mn>0</mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                    </mrow>
+                </math> 
+                znajdował się na 920 kilometrze autostrady (
+                    <math>
+                        <mrow>
+                            <msub>
+                                <mi>s</mi>
+                                <mn>0</mn>
+                            </msub>
+                            <mo>=</mo>
+                            <mn>920</mn>
+                            <mi>km</mi>
+                        </mrow>
+                    </math>).
+                Przez pół godziny (
+                    <math>
+                        <mrow>
+                            <mi>t</mi>
+                            <mo>=</mo>
+                            <mn>0,5</mn>
+                            <mi>h</mi>
+                        </mrow>
+                    </math>)
+                jechał ze stałą prędkością 
+                <math>
+                    <mrow>
+                        <mi>v</mi>
+                        <mo>=</mo>
+                        <mn>120</mn>
+                        <mfrac>
+                            <mrow>
+                                <mi>km</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>h</mi>
+                            </mrow>
+                        </mfrac>
+                    </mrow>
+                </math>.
+                W tym czasie przebył drogę 
+                <math>
+                    <mrow>
+                        <mo>Δ</mo>
+                        <mi>s</mi>
+                        <mo>=</mo>
+                        <mn>120</mn>
+                        <mfrac>
+                            <mrow>
+                                <mi>km</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>h</mi>
+                            </mrow>
+                        </mfrac>
+                        <mo>⋅</mo>
+                        <mn>0,5</mn>
+                        <mi>h</mi>
+                        <mo>=</mo>
+                        <mn>60</mn>
+                        <mi>km</mi>
+                    </mrow>
+                </math>. 
+                Znajdował się w położeniu 
+                <math>
+                    <mrow>
+                        <mi>s</mi>
+                        <mo>=</mo>
+                        <mn>920</mn>
+                        <mi>km</mi>
+                        <mo>+</mo>
+                        <mn>60</mn>
+                        <mi>km</mi>
+                        <mo>=</mo>
+                        <mn>980</mn>
+                        <mi>km</mi>
+                    </mrow>
+                </math>, 
+                czyli na 980. kilometrze autostrady.
+                <br><br>
+                Jeśli samochód jechałby w stronę przeciwną, to również w pół godziny przebyłby drogę 
+                równą 60 km, ale znalazłby się w położeniu
+                <math>
+                    <mrow>
+                        <mi>s</mi>
+                        <mo>=</mo>
+                        <mn>920</mn>
+                        <mi>km</mi>
+                        <mo>-</mo>
+                        <mn>60</mn>
+                        <mi>km</mi>
+                        <mo>=</mo>
+                        <mn>860</mn>
+                        <mi>km</mi>
+
+                    </mrow>
+                </math>
+                (na 860. kilometrze autostrady).
+            </p>
+        </div>
+        <p class="bookText">
+            Wartość prędkości w ruchu jednostajnym jest stała, zatem wykres zależności prędkości od czasu 
+            jest linią prostą równoległą do osi czasu, jak poniżej.
+        </p>
+        <a href="images/wykres3.png" target="_blank"><img class="charts" src="images/wykres3.png" style="width: 35%" alt="wykres3"></a>
+        <p class="bookText">
+            Pole powierzchni prostokąta zakreślonego na tym rysunku wynosi 
+            <math>
+                <mrow>
+                    <mi>v</mi>
+                    <mo>Δ</mo>
+                    <mi>t</mi>
+                </mrow>
+            </math>
+            (iloczyn podstawy i wysokości). Zatem, zgodnie ze wzorem
+            <math>
+                <mrow>
+                    <mi>s</mi>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>s</mi>
+                        <mn>0</mn>
+                    </msub>
+                    <mo>+</mo>
+                    <mi>vt</mi>
+                </mrow>
+            </math>, 
+            oznacza ono drogę 
+            <math>
+                <mrow>
+                    <mo>Δ</mo>
+                    <mi>s</mi>
+                </mrow>
+            </math>. 
+            Mamy więc:
+        </p>
+        <div class="formula">
+            <math>
+                <mrow>
+                    <mo>Δ</mo>
+                    <mi>s</mi>
+                    <mo>=</mo>
+                    <mi>v</mi>
+                    <mo>Δ</mo>
+                    <mi>t</mi>
+                </mrow>
+            </math>
+        </div>
+        <p class="bookText">
+            Sformułujmy wniosek: 
+        </p>
+        <p class="conclusion">
+                pole powierzchni pod wykresem zależności prędkości od czasu jest liczbowo równe 
+                drodze przebytej przez ciało.
+        <p class="bookText">
+            Wniosek ten celowo sformułowany został bardzo ogólnie, gdyż jest on słuszny dla 
+            dowolnego ruchu, nie tylko dla ruchu jednostajnego. Skorzystamy z niego, gdy będziemy 
+            wyprowadzać wzór na drogę w ruchu jednostajnie przyspieszonym.
+            <br>
+            <br>
+        </p>
+    </div>
+    <footer>
+        <p class="font3">
+            Kamila Nagórska, 2020
+        </p>   
+        <a href='https://github.com/kamilanagorska'><img class="footimage" src="images/logo.png" alt="GitHub logo"></a>
+    </footer>
 </body>
 </html>
