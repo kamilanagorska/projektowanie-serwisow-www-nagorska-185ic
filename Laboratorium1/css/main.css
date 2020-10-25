@@ -36,6 +36,9 @@ body {
 .font5 {
   font-family: 'Stint Ultra Expanded';
 }
+.font6 {
+  font-family: 'Advent Pro';
+}
 /*naglowek glownej*/
 .header {
   color: #666699;
@@ -178,6 +181,36 @@ transform: scale(1.1);
   padding-bottom: 20px;
   padding-right: 50px;
   padding-left: 50px;
+}
+form {
+  margin: 30px auto;
+  width: 70%;
+  padding: 50px;
+  border: 1px solid #f0f0f5;
+  background-color: #e0e0eb;
+  border-radius: 5px;
+  text-align: left;
+}
+input {
+  font-family: 'Advent Pro';
+  font-size: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #7575a3;
+  background-color: #f0f0f5;
+}
+input:focus {
+  border-color: #f0f0f5;
+}
+#agree {
+  font-size: 15px;
+}
+#check {
+  width: 0;
+  margin: 0 auto;
+}
+.lab {
+  font-size: 21px;
 }
 footer {
   width: 100vw;

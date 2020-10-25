@@ -11,16 +11,16 @@ function slides() {
     x[myId-1].style.display = "block";
     setTimeout(slides, 5000);
 }
-var button = document.getElementById("button1");
-button.addEventListener("click", function() {
+var button1 = document.getElementById("button1");
+button1.addEventListener("click", function() {
     var y = document.getElementById("hideImage");
         if(y.style.display === "none"){
             y.style.display = "block";
-            button.style.backgroundColor = "#666699";
+            button1.style.backgroundColor = "#666699";
         }
         else{
             y.style.display = "none";
-            button.style.backgroundColor = "#8585ad";
+            button1.style.backgroundColor = "#8585ad";
         }
-});      
+});  
 
