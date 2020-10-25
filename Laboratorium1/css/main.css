@@ -12,7 +12,7 @@ body {
     float: left;
     color: #e0e0eb;
     text-align: center;
-    padding: 14px 16px; /*gora prawp dol lewo*/
+    padding: 14px 16px; /*gora prawo dol lewo*/
     text-decoration: none; /*usuwa podkreslenie*/
     font-size: 17px;
 }
@@ -52,7 +52,7 @@ body {
   color: black;
   text-align: center;
   font-size: 15px;
-  padding: 0 20px 70px 20px;
+  margin: 0 10% 5% 10%;
   }
 /*guzik z glownej*/
 .button {
@@ -79,14 +79,14 @@ body {
 }
 /*tło strony(kartki)*/
 .page {
-  margin: 100px;
+  margin: 10%;
   border: 1px solid gray;
   background-color: #f0f0f5;
 }
 .dateplace {
   text-align: right;
   font-size: 20px;
-  padding-right: 30px;
+  padding-right: 15px;
   color: #666699;
 }
 .letterhead {
@@ -126,14 +126,14 @@ transform: scale(1.1);
 .bookTitle{
   text-align: left;
   font-size: 30px;
-  margin: 50px auto 50px 10px;
+  margin: 50px 5%;
   color: #7575a3;
   font-weight: bold;
 }
 .bookText {
   font-size: 13px;
   text-align: left;
-  margin: 20px 10px 20px 10px;
+  margin: 20px 10% 20px 5%;
 }
 .formula {
   font-size: 20px;
@@ -149,7 +149,7 @@ transform: scale(1.1);
 .conclusion {
   font-size: 15px;
   text-align: left;
-  margin: 20px 10px 20px 10px;
+  margin: 20px 10% 20px 5%;
   font-weight: bold;
   color:#7575a3;
 }
@@ -212,8 +212,13 @@ input:focus {
 .lab {
   font-size: 21px;
 }
+.thanks {
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+}
 footer {
-  width: 100vw;
+  width: 100%;
   display: block;
   overflow: hidden;
   background-color: #a3a3c2;
