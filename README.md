@@ -14,6 +14,7 @@ Do wykonania projektu wykorzystany został HTML, CSS i JS.
 
 Na samej górze dodałam pasek z podstronami, a niżej zdjęcie, które zmienia się po 5 sekundach. Są trzy zdjęcia, które wyświetlane są wkółko. By to osiągnąć napisałam funkcje w JS. Niżej umieszczony jest tekst, a pod nim guzik. Po jego naciśnięciu wyświetla się zdjęcie, a gdy naciśniemy go ponownie, 
 zdjęcie znika. 
+
 ![glownabutton](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/glownabutton.png?raw=true)
 
 Do tego również wykorzystałam JS. Na samym dole znajduje się "stópka" z imieniem i nazwiskiem, rokiem oraz linkiem go GitHuba.
@@ -28,8 +29,13 @@ CSS'ie.
 #### Podręcznik:
 ![podrecznik](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/podrecznik.png?raw=true)
 
+Strona przypominająca podręcznik. Umieściłam tu wielw wzorów, które zapisałam za pomocą MathML. Znajdują się tu również wykresy, które po najechaniu myszką bledną, a po wciśnięciu otwierają się w nowym oknie. 
+
 #### Formularz:
 ![formularz](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/formularz.png?raw=true)
+
+Na stronie tej znajduje się formularz składający się z pól, do których należy wpisać dane i jednego checkboxa. Po wciśnięciu guzika "Zapisz się" formularz znika, a wyświetla się komunikat z podziękowaniami za zapisanie się na kurs HTML. By formularz znikał, napisałam funkcję w JS, która tworzy nowy element, a następnie zamienia formularz z nowo utworzonym elementem. Dodatkowo pobierane zostaje imię osoby zapisującej się na kurs, by później móc to imię wyświetlić w komunikacie. 
+
 ### Laboratorium 2
 *cdn...*
 ### Laboratorium 3
