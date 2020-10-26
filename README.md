@@ -10,7 +10,7 @@ Prosta strona internetowa zawierająca trzy podstrony:
 
 Do wykonania projektu wykorzystany został HTML, CSS i JS.
 #### Strona główna:
-![glowna] (Laboratorium1/images/glowna.png)
+![glowna] (https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/glowna.png)
 ### Laboratorium 2
 *cdn...*
 ### Laboratorium 3
