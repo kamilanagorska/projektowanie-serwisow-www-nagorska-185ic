@@ -11,7 +11,7 @@ Prosta strona internetowa zawierająca trzy podstrony:
 Do wykonania projektu wykorzystany został HTML, CSS i JS.
 #### Strona główna:
 ![glowna](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/glowna.png?raw=true)
-<img src=https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/glowna.png?raw=true width="400px"/>
+<img src=https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/glowna.png?raw=true width="400px">
 
 Na samej górze dodałam pasek z podstronami, a niżej zdjęcie, które zmienia się po 5 sekundach. Są trzy zdjęcia, które wyświetlane są w kółko. By to osiągnąć napisałam funkcje w JS. Niżej umieszczony jest tekst, a pod nim guzik. Po jego naciśnięciu wyświetla się zdjęcie, a gdy naciśniemy go ponownie, 
 zdjęcie znika. 
