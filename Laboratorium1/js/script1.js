@@ -4,12 +4,14 @@ function slides() {
     var i;
     var x = document.getElementsByClassName("images");
     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+       x[i].style.display = "none"; /*ukrywa obrazek*/
     }
     myId++;
-    if (myId > x.length) {myId = 1}
-    x[myId-1].style.display = "block";
-    setTimeout(slides, 5000);
+    if (myId > x.length) {
+        myId = 1;
+    }
+    x[myId-1].style.display = "block"; /*pokazuje*/
+    setTimeout(slides, 5000); /*5 sekund*/
 }
 var button1 = document.getElementById("button1");
 button1.addEventListener("click", function() {

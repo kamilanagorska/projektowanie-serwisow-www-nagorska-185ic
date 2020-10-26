@@ -9,6 +9,7 @@ Prosta strona internetowa zawierająca trzy podstrony:
 - strona z formularzem.
 
 Do wykonania projektu wykorzystany został HTML, CSS i JS.
+#### Strona główna:
 
 ### Laboratorium 2
 *cdn...*

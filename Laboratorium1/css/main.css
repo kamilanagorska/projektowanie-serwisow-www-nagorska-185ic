@@ -206,16 +206,24 @@ input:focus {
   font-size: 15px;
 }
 #check {
-  width: 0;
+  width: 15px;
   margin: 0 auto;
+  background-color: #e0e0eb;
 }
 .lab {
   font-size: 21px;
 }
 .thanks {
-    font-size: 15px;
-    text-align: center;
-    color: gray;
+  display: block;
+  width: 60%;
+  margin: 50px auto;
+  background-color: #f0f0f5;
+  font-size: 20px;
+  text-align: center;
+  color: #29293d;
+  border: 1px solid #e0e0eb;
+  border-radius: 6px;
+  padding: 40px 30px;
 }
 footer {
   width: 100%;
