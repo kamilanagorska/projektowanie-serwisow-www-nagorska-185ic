@@ -38,9 +38,10 @@ Strona przypominająca podręcznik. Umieściłam tu wiele wzorów, które zapisa
 #### Formularz:
 ![formularz](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/formularz.png?raw=true)
 
-Na stronie tej znajduje się formularz składający się z pól i jednego checkboxa. Po wciśnięciu guzika "Zapisz się" formularz znika, a wyświetla się komunikat z podziękowaniami za zapisanie się na kurs HTML. By formularz znikał, napisałam funkcję w JS, która tworzy nowy element, a następnie zamienia formularz z nowo utworzonym elementem. Dodatkowo pobierane zostaje imię osoby zapisującej się na kurs, by później móc to imię wyświetlić w komunikacie. 
+Na stronie tej znajduje się formularz składający się z pól i jednego checkboxa. Miało być bez walidacji danych, więc nie korzystałam z opcji required ani pattern. Po wciśnięciu guzika "Zapisz się" formularz znika, a wyświetla się komunikat z podziękowaniami za zapisanie się na kurs HTML. By formularz znikał, napisałam funkcję w JS, która tworzy nowy element, a następnie zamienia formularz z nowo utworzonym elementem. Dodatkowo pobierane zostaje imię osoby zapisującej się na kurs, by później móc je wyświetlić w komunikacie. 
 
 ![formularzthanks](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/formularzthanks.png?raw=true)
+
 
 ### Laboratorium 2
 *cdn...*
