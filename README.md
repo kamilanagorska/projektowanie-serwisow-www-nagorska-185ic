@@ -25,18 +25,21 @@ Do tego również wykorzystałam JS. Na samym dole znajduje się "stópka" z imi
 Prócz paska z menu na górze i "stópki", które znajdują się na każdej stronie, mamy tu tekst sformatowany tak, by wyglądał jak list. Wykorzystałam do 
 tego klasy w CSS. Do listu dołączone jest zdjęcie, które powiększa się odrobinę, gdy najedziemy na nie myszką. Osiągnęłam ten efekt za pomocą hover w 
 CSS'ie.
+
 ![listimage](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/listimage.png?raw=true)
 
 #### Podręcznik:
 ![podrecznik](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/podrecznik.png?raw=true)
 
 Strona przypominająca podręcznik. Umieściłam tu wiele wzorów, które zapisałam za pomocą MathML. Znajdują się tu również wykresy, które po najechaniu myszką bledną, a po wciśnięciu otwierają się w nowym oknie. 
+
 ![podrecznikcharts](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/podrecznikcharts.png?raw=true)
 
 #### Formularz:
 ![formularz](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/formularz.png?raw=true)
 
 Na stronie tej znajduje się formularz składający się z pól i jednego checkboxa. Po wciśnięciu guzika "Zapisz się" formularz znika, a wyświetla się komunikat z podziękowaniami za zapisanie się na kurs HTML. By formularz znikał, napisałam funkcję w JS, która tworzy nowy element, a następnie zamienia formularz z nowo utworzonym elementem. Dodatkowo pobierane zostaje imię osoby zapisującej się na kurs, by później móc to imię wyświetlić w komunikacie. 
+
 ![formularzthanks](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/formularzthanks.png?raw=true)
 
 ### Laboratorium 2
