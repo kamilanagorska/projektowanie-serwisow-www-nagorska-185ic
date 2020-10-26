@@ -10,7 +10,7 @@ Prosta strona internetowa zawierająca trzy podstrony:
 
 Do wykonania projektu wykorzystany został HTML, CSS i JS.
 #### Strona główna:
-![glowna](./Laboratorium1/images/glowna.png = 400px)
+![glowna](.\Laboratorium1\images\glowna.png = 400px)
 ### Laboratorium 2
 *cdn...*
 ### Laboratorium 3
