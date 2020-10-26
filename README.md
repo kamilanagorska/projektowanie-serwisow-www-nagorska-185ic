@@ -31,7 +31,7 @@ CSS'ie.
 #### Podręcznik:
 ![podrecznik](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/podrecznik.png?raw=true)
 
-Strona przypominająca podręcznik. Umieściłam tu wiele wzorów, które zapisałam za pomocą MathML. Znajdują się tu również wykresy, które po najechaniu myszką bledną, a po wciśnięciu otwierają się w nowym oknie. 
+Strona przypominająca podręcznik. Umieściłam tu wiele wzorów, które zapisałam za pomocą MathML. Nie jest on niestety wspierany przez Chrome, więc wykorzystałam gotowy skrypt MathJax, który sprawia, że wzory zapisane za pomocą MathML są poprawnie wyświetlane przez przeglądarkę. Znajdują się tu również wykresy, które po najechaniu myszką bledną, a po wciśnięciu otwierają się w nowym oknie. 
 
 ![podrecznikcharts](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium1/images/podrecznikcharts.png?raw=true)
 
