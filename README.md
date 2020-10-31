@@ -6,7 +6,8 @@
 Prosta strona internetowa.
 Dokładny opis w folderze [Laboratorium1](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium1)
 ### Laboratorium 2
-*cdn...*
+Ćwiczenia z wykorzystaniem Java Script.
+Opis: [Laboratorium2]()
 ### Laboratorium 3
 ### Laboratorium 4
 ### Laboratorium 5
