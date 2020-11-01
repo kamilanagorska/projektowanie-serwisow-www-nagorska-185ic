@@ -1,27 +1,40 @@
+#clock div {
+	position: absolute;
+	left: 50%;
+}
+
 #hour{
-    background-color: blueviolet;
+    background-color:pink;
     height: 80px;
     width: 5px;
-    margin-left: 49%;
-    margin-top: -545px;
+	top: 180px;
+	margin-left: -6px;
     transform-origin: center 93px;
 }
 
 #minute{
-    background-color: blueviolet;
+    background-color: pink;
     height: 100px;
     width: 4px;
-    margin-left: 49%;
-    margin-top: -545px;
     transform-origin: center 113px;
+	top: 160px;
+	margin-left: -6px;
 }
 
 #sec{
-    background-color: #b20000;
+    background-color: white;
     height: 100px;
     width: 3px;
-    margin-left: 49%;
-    margin-top: -545px;
+	top: 160px;
+	margin-left: -5px;
     /*centrum rotacji*/
     transform-origin: center 113px;
+}
+
+#clock {
+	margin: 30px auto;
+	background-image: url('../images/watch.png');
+	width: 300px;
+	height: 496px;
+	display: block;
 }
