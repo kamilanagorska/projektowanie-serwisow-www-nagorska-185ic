@@ -8,6 +8,7 @@ function changeNumber(){
    }
 var numberFlowers = 1;
 function newFlower(){
+    "use strict";
     var x = document.createElement("IMG");
     x.setAttribute("src","images/flower.png");
     x.setAttribute("height","60px");
@@ -19,6 +20,7 @@ function newFlower(){
    }
 
 function hello() {
+    "use strict";
     var d = new Date();
     var h = d.getHours();
     if(h > 17) {

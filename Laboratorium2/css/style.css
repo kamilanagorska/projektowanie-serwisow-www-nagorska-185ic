@@ -1,0 +1,27 @@
+#hour{
+    background-color: blueviolet;
+    height: 80px;
+    width: 5px;
+    margin-left: 49%;
+    margin-top: -545px;
+    transform-origin: center 93px;
+}
+
+#minute{
+    background-color: blueviolet;
+    height: 100px;
+    width: 4px;
+    margin-left: 49%;
+    margin-top: -545px;
+    transform-origin: center 113px;
+}
+
+#sec{
+    background-color: #b20000;
+    height: 100px;
+    width: 3px;
+    margin-left: 49%;
+    margin-top: -545px;
+    /*centrum rotacji*/
+    transform-origin: center 113px;
+}

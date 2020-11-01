@@ -1,3 +1,4 @@
+"use strict";
 function clickDay() {
     document.getElementById("myImage").src="images/sun.png";
     let sky = document.getElementsByClassName("d-inline-block")[0];
@@ -8,4 +9,3 @@ function clickNight() {
     let sky = document.getElementsByClassName("d-inline-block")[0];
     sky.style.backgroundColor="black";
 }
-
