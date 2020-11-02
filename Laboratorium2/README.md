@@ -73,7 +73,7 @@ Strona z pozostałymi przykładami zastosowania JS. Mamy tu przycisk, który po 
 
 Za pomocą JS wyświetlany jest tutaj URL dokumentu, a poniżej ilość elementów div użytych na stronie. 
 
-!url](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium2/images/url.png?raw=true)
+![url](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium2/images/url.png?raw=true)
 
 Niżej są dwa guziki, jeden zmienia swój tekst po naciśnięciu, a drugi wyświetla ukryte zdjęcie. Oba po ponownym naciśnięciu powodują powrót do stanu poprzedniego. 
 
