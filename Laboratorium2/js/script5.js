@@ -3,6 +3,7 @@ function userText() {
     document.getElementById("input").innerHTML = uText;
 }
 function changeBg() {
+    "use strict";
     var nBg = document.getElementsByClassName("d-inline-block")[0];
     if(nBg.style.backgroundColor == "floralwhite") {
         nBg.style.backgroundColor = "aliceblue";

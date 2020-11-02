@@ -23,83 +23,37 @@
           <a class="nav-link" href="calculator.html">Kalkulator</a>
           <a class="nav-link" href="notes.html">Notatnik</a>
           <a class="nav-link active" href="imgs.html">Zdjęcia</a>
+          <a class="nav-link" href="other.html">Inne</a>
         </div>
       </div>
     </nav>
     <div class="container">
-        <div class="row mt-5">
-                <p class="display-4">Zdjęcia</p>
-        </div>
-        <div class="row mt-5 text-center">
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/night.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Kliknij zdjęcie.</p>
-                    </div>
-                  </div>  
+      <div class="row justify-content-center">
+        <div class="col col-md-6 mt-5">
+          <div class="card">
+            <div class="card-header">
+              Galeria
             </div>
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/night.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Kliknij zdjęcie.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/night.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Kliknij zdjęcie.</p>
-                    </div>
-                  </div>     
-            </div>
-        </div>
-        <div class="row mt-5 text-center">
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/night.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Kliknij zdjęcie.</p>
-                    </div>
-                  </div>  
-            </div>
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/night.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Kliknij zdjęcie.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/night.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Kliknij zdjęcie.</p>
-                    </div>
-                  </div>     
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <div id="myModal" class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="..." alt="image">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+            <div class="card-body text-center">
           </div>
         </div>
       </div>
+      </div>
+
+      	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="big-pic" style="width: 100%">
+      </div>
+      </div>
+    </div>
     </div>
 
     <!-- Optional JavaScript-->
