@@ -9,3 +9,5 @@ Moja strona składa się ze strony głównej i sześciu podstron:
 - notatnik
 - zdjęcia
 - inne.
+
+#### Strona główna
