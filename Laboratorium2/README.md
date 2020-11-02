@@ -11,3 +11,4 @@ Moja strona składa się ze strony głównej i sześciu podstron:
 - inne.
 
 #### Strona główna
+![glowna](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium2/images/glowna.png?raw=true)
