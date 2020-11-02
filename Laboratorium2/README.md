@@ -43,7 +43,7 @@ Na końcu mamy obrazek, który powiększa się, gdy najedzemy na niego.
 #### Zegar
 ![zegar](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium2/images/zegar.png?raw=true)
 
-Podstrona z zegarem. Pokazuje on aktualną godzinę. Zrobiony został za pomocą JQuery i CSS. W CSS'ie stworzyłam strzałki, każda ma swój kolor, rozmiar i centrum rotacji. Za pomocą JQuery pobierany jest aktualny czas i wyliczane są stopnie, o które należy obracać strzałki. Następnie strzałki są obracane (transform, rotate) o określone stopnie. Funkcja ta jest powtarzana co sekundę. 
+Podstrona z zegarem. Pokazuje on aktualną godzinę. Zrobiony został za pomocą JS i CSS. W CSS'ie stworzyłam strzałki, każda ma swój kolor, rozmiar i centrum rotacji. Za pomocą JS pobierany jest aktualny czas i wyliczane są stopnie, o które należy obracać strzałki. Następnie strzałki są obracane (transform, rotate) o określone stopnie. Funkcja ta jest powtarzana co sekundę. 
 
 #### Kalkulator
 ![kalkulator](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium2/images/kalkulator.png?raw=true)
