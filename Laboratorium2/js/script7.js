@@ -36,3 +36,8 @@ button1.addEventListener("click", function() {
             y.style.display = "none";
         }
 });  
+var inputHd = document.getElementsByTagName("input")[0];
+document.getElementsByTagName("input")[0].addEventListener("copy",copied);
+function copied() {
+  inputHd.style.display="none";
+}
