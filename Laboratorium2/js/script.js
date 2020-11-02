@@ -1,5 +1,7 @@
 var dHello = document.getElementsByClassName("display-4")[0];
 hello();
+myCursor();
+todayDate();
 
 var timesClicked = 0;
 function changeNumber(){
@@ -18,7 +20,6 @@ function newFlower(){
     numberFlowers ++;
     document.getElementById("numberFlowers").innerHTML=numberFlowers;
    }
-
 function hello() {
     "use strict";
     var d = new Date();
@@ -29,5 +30,15 @@ function hello() {
     else {
         dHello.innerHTML = "Dzień dobry!";
     }
+}
+function myCursor() {
+    document.body.style.cursor = "pointer";
+}
+function todayDate() {
+    var tDate = new Date();
+    var y = tDate.getFullYear();
+    var m = tDate.getMonth() + 1; /*bo od 0*/
+    var d = tDate.getDate();
+    document.getElementById("todayDate").innerHTML="Dzisiejsza data: "+ d +"." + m + "." + y;
 }
 

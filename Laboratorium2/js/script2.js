@@ -17,4 +17,10 @@ textToClick.addEventListener("dblclick", function() {
         document.getElementById("cytat").innerHTML="Koniec końcem, zawsze po burzy wychodzi słońce";
     }
 })
+function bigger(x) {
+    x.style.width = "70%";
+}
+function normal(x) {
+    x.style.width = "50%";
+}
 

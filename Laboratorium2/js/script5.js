@@ -1,25 +1,28 @@
 function userText() {
     var uText = document.getElementById("formGroupExampleInput").value;
-    document.getElementById("input").innerHTML = "Twój tekst: " + uText;
+    document.getElementById("input").innerHTML = uText;
 }
 function changeBg() {
-    if(document.body.style.backgroundColor === "beige") {
-        document.body.style.backgroundColor = "blanchedalmond";
-    } else {
-        document.body.style.backgroundColor = "beige";
+    var nBg = document.getElementsByClassName("d-inline-block")[0];
+    if(nBg.style.backgroundColor == "floralwhite") {
+        nBg.style.backgroundColor = "aliceblue";
+    }
+    else {
+        nBg.style.backgroundColor = "floralwhite";
     }
 }
 function changeHd() {
-    var head = document.getElementsByClassName("display-4")[0];
-    if(head.style.color === "red") {
+    "use strict";
+    var head = document.getElementsByClassName("d-inline-block")[0];
+    if(head.style.color === "deeppink") {
         head.style.color = "black";
     }
     else {
-        head.style.color = "red";
+        head.style.color = "deeppink";
     }
 }
 function changeTx() {
-    var tex = document.getElementById("textChange");
+    var tex = document.getElementById("not");
     if(tex.style.fontSize=="30px")
     {
         tex.style.fontSize="16px";
