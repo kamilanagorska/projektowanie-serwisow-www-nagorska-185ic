@@ -1,5 +1,6 @@
 "use strict";
-/*const-stala tylko do odczytu*/
+/*const-stala tylko do odczytu, nie mozna jej zmienić, przypisać do innego obiektu
+ale ja bede zmieniac display.value i to juz nie jest const*/
 const buttons = document.querySelectorAll("button.btn");
 const display = document.querySelector(".form-control");
 /*dla każdego guzika dodajemy eventlistener na click i gdy click to funkcja calculate*/
@@ -24,6 +25,7 @@ function calculate(event) {
     }
     /*jeśli X to usuwamy ostani element*/
     else if (clickedButtonValue == "X") {
+        display.value = display.value.substring(0,display.value.length-1);
 
     } /*jeśli % to najpierw wykonujemy to co mamy a potem liczymy %*/
     else if (clickedButtonValue == "/100") {   
