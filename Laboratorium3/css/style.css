@@ -1,0 +1,28 @@
+body {
+    background-color:#ecf2f9;
+    font-family: 'Scope One';
+    text-align: center;
+}
+.menu {
+    background-color: #8cb3d9;
+    overflow: hidden; /*co sie nie zmiesci jest ukryte*/
+  }
+/*tekst w pasku*/
+.menu a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /*gora prawo dol lewo*/
+    text-decoration: none; /*usuwa podkreslenie*/
+    font-size: 17px;
+}
+/* jak sie najedzie to zmiana koloru */
+.menu a:hover {
+    background-color: #b3cce6;
+    color: white;
+}
+.header {
+    font-size: 50px;
+    font-weight: bold;
+    color: #336699;
+}
