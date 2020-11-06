@@ -26,3 +26,25 @@ body {
     font-weight: bold;
     color: #336699;
 }
+.butn {
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 3px;
+    border-color: black;
+    background-color: #d9e6f2;
+}
+.font{
+    font-family: 'Scope One';
+}
+input {
+    width: 50%;
+    text-align: center;
+}
+.color {
+    color: #264d73;
+}
+#bloc {
+    background-color: #d9e6f2;
+    border: 1px solid black;
+    margin-top: 20px;
+}
