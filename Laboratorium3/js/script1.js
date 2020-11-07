@@ -1,11 +1,12 @@
 "use strict";
 var exText = "Dowolny tekst";
 var exTab = [20,22,23,24];
-var first = -2;
+var first = false;
 var second = 66;
 var imie = "Kamila";
 var miesiac = "Styczen";
 const str = "Ania|Marcin|Bartek|Piotr|Kuba|Beata|Agnieszka";
+var znakPodzialu = "|";
 var arrayNames = ["Ania" , "Marcin" , "Bartek" , "Piotr", "Kamila"];
 const users = [
     "Ania Nowak",
@@ -33,7 +34,8 @@ console.info("Imie: " + imie);
 console.info("Miesiac: " + miesiac);
 console.info(zadanie5(imie,miesiac));
 console.info("Tekst: " + str);
-console.info("Nowy tekst: " + zadanie6(str));
+console.info("Znak podziału: " +znakPodzialu)
+console.info("Nowy tekst: " + zadanie6(str,znakPodzialu));
 console.info("Tablica imion: " + arrayNames);
 console.info("Duże litery: " + zadanie7a(arrayNames));
 console.info("Zmienna wielkość liter: " + zadanie7b(arrayNames));
@@ -108,10 +110,10 @@ function zadanie5(i, m) {
     return result;
 }
 
-function zadanie6(myStr) {
-    let myArray = myStr.split("|");
+function zadanie6(myStr,znak) {
+    let myArray = myStr.split(znak);
     myArray.sort();
-    let newText = myArray.join("|");
+    let newText = myArray.join(znak);
     return newText;
 }
 
