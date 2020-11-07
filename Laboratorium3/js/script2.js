@@ -46,8 +46,34 @@ document.addEventListener("dblclick", function(){
     }   
 })
 
-var myBlock = document.getElementById("bloc");
+var myBlock = document.getElementById("bc");
 myBlock.addEventListener("wheel", function(){
     myBlock.style.fontSize="35px";
+})
+
+var againText = document.getElementById("txt7");
+againText.addEventListener("copy",copyTxt);
+function copyTxt() {
+    if(againText.style.color==="yellowgreen") {
+        againText.style.fontSize="30px";
+        againText.style.color="teal";
+    } else {
+        againText.style.color="yellowgreen";
+        againText.style.fontSize="16px";
+    }   
+}
+
+var mySdBlock = document.getElementsByClassName("bloc2")[0];
+mySdBlock.addEventListener("mouseenter", rem) 
+function rem() {
+    againText.removeEventListener("copy",copyTxt);
+}
+
+var myImg = document.getElementById("im");
+myImg.addEventListener("mousedown",function(){
+    myImg.style.width="70%";
+})
+myImg.addEventListener("mouseup",function(){
+    myImg.style.width="50%";
 })
 

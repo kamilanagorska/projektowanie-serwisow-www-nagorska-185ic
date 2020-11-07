@@ -43,8 +43,16 @@ input {
 .color {
     color: #264d73;
 }
-#bloc {
+.bloc {
     background-color: #d9e6f2;
     border: 1px solid black;
     margin-top: 20px;
+}
+.color2 {
+    color: yellowgreen;
+}
+.bloc2 {
+    background-color: thistle;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
