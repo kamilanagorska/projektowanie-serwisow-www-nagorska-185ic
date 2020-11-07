@@ -15,42 +15,53 @@ Funkcja sumująca tablicę. Do wykonania tego ćwiczenia użyłam reduce().
 ![cw2](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw2.png?raw=true)
 
 - Ćwiczenie 3.
-Funkcja zwracająca zmiksowaną wielkość liter. Dla każdej litery losowana jest pseudolosowa wartość za pomocą Math.random(), jeśli jest ona większa od 0.5 to literka pisana jest jako mała, jeśli jest inaczej to jako duża. Przykład dla tekstu z pierwszego ćwiczenia, czyli "Dowolny tekst".
+Funkcja zwracająca zmiksowaną wielkość liter. Dla każdej litery losowana jest pseudolosowa wartość za pomocą Math.random(), jeśli jest ona większa od 0.5 to literka pisana jest jako mała, jeśli jest inaczej to jako duża.
+
+Przykład dla tekstu z pierwszego ćwiczenia, czyli "Dowolny tekst".
 
 ![cw3](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw3.png?raw=true)
 
 - Ćwiczenie 4.
 Funkcja sprawdzająca, czy oba atrybuty są liczbami, jeśli tak to zwraca ona iloczyn tych liczb, jeśli nie to zwraca false. Sprawdzenie, czy atrubut jest liczbą dokonałam za pomocą typeof() == "number".
+
 Przykład dla dwóch liczb:
 
 ![cw4a](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw4a.png?raw=true)
+
 Przykład dla liczby i nie liczby:
 
 ![cw4b](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw4b.png?raw=true)
 
 - Ćwiczenie 5.
 Funkcja zwracająca odpowiedni tekst w zależności od podanego miesiąca. Wykorzystałam tu warunek wielokrotnego wyboru switch. Dla zabezpieczenia, gdyby ktoś wpisał miesiąc z dużej litery na samym początku zamieniam wielkość liter na małe. 
+
 Przykład dla mojego imienia i miesiąca urodzin:
 
 ![cw5a](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw5a.png?raw=true)
 
 - Ćwiczenie 6.
 Funkcja przyjmująca dwa atrybuty (tekst, znak podziału). Dzieli ona tekst na części, z czego tworzona jest tablica. Tablica zostaje posortowana, a funkcja zwraca tekst ponownie rozdzielony znakiem podziału. Najpierw tekst rozdzielam za pomocą split(). Następnie sortuję go z użyciem sort(), a na koniec łączę go dzięki join().
+
 Przykład:
 
 ![cw6](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw6.png?raw=true)
 
 - Ćwiczenie 7.
 Pierwsza funkcja zwracająca nową tablicę, w której imiona zapisane są dużymi literami. Wykorzystałam do tego toUpperCase(). Do tablicy z przykładu dopisałam na końcu swoje imię.
+
 Przykład:
 
 ![cw7a](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw7a.png?raw=true)
+
 Druga funkcja, która zwraca nową tablicę, w której imiona mają zmienną wielkość liter. Funkcja działa podobnie do tej z Ćwiczenia 3, jednak tutaj wykorzystać musiałam dwie pętle for, jedna zagnieżdżona w drugiej, by prócz przejścia wszystkich imion przejść również po wszystkich literach. 
+
 Przykład dla tej samej tablicy co wyżej:
+
 ![cw7b](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw7b.png?raw=true)
 
 - Ćwiczenie 8.
 Funkcja checkFemale, która sprawdza, czy przekazane imię jest żeńskie. Jeśli tak to zwraca wartość true, jeśli nie to wartość false. Działa na zasadzie sprawdzania ostatniej literki imiona, zakładając, że żeńskie imiona w języku polskim kończą się na literę "a". Wykorzystałam do tego slice().
+
 Przykład dla mojego imienia:
 
 ![cw8a](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw8a.png?raw=true)
@@ -60,6 +71,7 @@ Przykład dla imienia męskiego:
 
 - Ćwiczenie 9.
 Funkcja countWomanInTable(), do której przekazana zostaje tablica użytkowników z ich imionami i nazwiskami. Funkcja liczy ile wśród nich jest kobiet. Najpierw z tablicy pobierane są imiona użytkowników i zapisywane w nowej tablicy za pomocą split(). Następnie dla każdego imienia wykonywana jest funkcja z Ćwiczenia 8. Jeśli funkcja ta zwraca wartość true, to wartość licznika jest zwiększana. Na końcu otrzymujemy ilość kobiet wśród użytkowników.
+
 Przykład dla tablicy z polecenia:
 
 ![cw9](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw9png.png?raw=true)
