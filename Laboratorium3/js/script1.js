@@ -23,7 +23,7 @@ const users = [
 ]
 
 console.info("Tekst: " + exText);
-console.info("Ilosc liter: " + zadanie1(exText));
+console.info(zadanie1(exText));
 console.info("Tablica: " + exTab);
 console.info("Suma tablicy: " + zadanie2(exTab));
 console.info("Zmiksowana wielkosc liter: " + zadanie3(exText));
@@ -42,10 +42,11 @@ console.info("Zmienna wielkość liter: " + zadanie7b(arrayNames));
 console.info("Imie: " + imie);
 console.info("Czy żeńskie? " + checkFemale(imie));
 console.info("Ile kobiet? " + countWomanInTable(users));
+
 function zadanie1(myText) {
     /*usuwa " " by wyliczyć tylko ilośc liter*/
     myText = myText.split(" ").join("");
-    return myText.length;
+    return "Liczba liter: " + myText.length;
 }
 
 function zadanie2(myTab) {

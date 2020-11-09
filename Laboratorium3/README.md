@@ -65,6 +65,7 @@ Funkcja checkFemale, która sprawdza, czy przekazane imię jest żeńskie. Jeśl
 Przykład dla mojego imienia:
 
 ![cw8a](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw8a.png?raw=true)
+
 Przykład dla imienia męskiego:
 
 ![cw8b](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium3/images/cw8b.png?raw=true)
