@@ -1,0 +1,12 @@
+#canvas1 {
+    /*wyśrodkowanie canvas*/
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /*wymiary*/
+    width: 600px;
+    height: 400px;
+    /*ramka*/
+    border: 1px solid black;
+}
