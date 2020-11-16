@@ -5,19 +5,19 @@ class Obstacle {
     constructor(){
         /*jeden konstruktor do robienia przeszkód na dole i u góry*/
         /*wysokośc górnej przeszkody, randomowa wartośc między 0
-        a wysokością canvas podzieloną przez 3*/
-        this.top = (Math.random() * canvas.height/3) + 20;
+        a wysokością canvas podzieloną przez 3 + 30 wydłuża troszkę przeszkody*/
+        this.top = (Math.random() * canvas.height/3) + 30;
         /*wysokość dolnej przeszkody takie same rozmiary co top
         dzielimy wysokosc canvas na 3, by mieć pewność, że będzie miejsce do przejścia między
         górną przeszkodza, a dolną*/
-        this.bottom = (Math.random() * canvas.height/3) + 20;
+        this.bottom = (Math.random() * canvas.height/3) + 30;
         /*x tuż za krawędzią canvas*/
         this.x = canvas.width;
         /*szerokość przeszkód*/
         this.width = 40;
-        /*tęczowe przeszkody*/
+        /*kolor przeszkod*/
         this.color = 'black';
-        /*pomoże w liczeniu punktów, jeśli nie policzona to false*/
+        /*pomoże w liczeniu punktów, jeśli nie policzona przeszkoda to false*/
         this.counted = false;
     }
     /*rysowanie przeszkód*/
@@ -36,7 +36,7 @@ class Obstacle {
         /*przesuwanie przeszków w lewo, przesuwa pixele o wartośc gameSpeed w lewo*/
         this.x -= gameSpeed;
         /*liczenie punktów jeśli jeszcze nie policzony i wspolrzedna x przeszkody
-        jest mniejsza od wspolrzednej x postaci/ptaszka*/
+        jest mniejsza od wspolrzednej x postaci/ptaszka, czyli jesli ptaszek jest już za przeszkodą*/
         if(!this.counted && this.x < bird.x)
         {
             score++;

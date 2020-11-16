@@ -4,16 +4,19 @@ WebFont.load({
         families: ['Orbitron']
     }
 });
+
 /*nasz canvas*/
 const canvas = document.getElementById('canvas1');
 /*tworzy obiekt CanvasRenderignContext2D reprezentujący dwuwymiarowy kontekst renderowania*/
 const ctx = canvas.getContext('2d');
-/*wymiary*/
+/*wymiary canvas*/
 canvas.width = 600;
 canvas.height = 400;
+
 /*zmienne użyte w grze
 wszystkie są typu let, bo ich wartosć będzie się często zmieniać 
 podczas pracy gry */
+
 /*będzie się zmieniać z true na false i na odwrót za każdym razem jak wciśniemy klawisz Space*/
 let spacePressed = false;
 /*będzie wykorzystane przez math.sin by nasza postać ruszała się płynnie w górę
@@ -47,6 +50,7 @@ const BG = {
     width: canvas.width,
     height: canvas.height
 }
+/*przesywanie dwóch obrazów tła i ich rysowanie*/
 function handleBackground(){
     /*jeśli pierwsze tło całe zjedzie w lewo to znaczy, że jest za lewym
     bokiem canvas to szybko przenieśmy je i schowajny za prawym bokiem canvas
@@ -74,13 +78,14 @@ function handleBackground(){
     /*rysowanie drugiego tła*/
     ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height);
 }
-
+/*wyświetlanie naszej gry*/
 function animate() {
     /*czyści canvas przed każdą ramką animacji
     clearRect() - ustawia piksele w prostokątnym obszarze na
     przezroczystą czerń (rgba(0,0,0,0)), narożnik prostokąta znajduje się
     w (x,y), a jego rozmiar podany jest przez szerokosc i wysokość)*/
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    /*tło*/
     handleBackground();
     /*wyświetlanie przeszkód przed wyświetlaniem postaci, by postać była
     na przeszkodach, a nie by one ją zakrywały*/
@@ -91,8 +96,11 @@ function animate() {
     bird.update();
     /*rysuje ptaszka*/
     bird.draw();
+    /*czcionka*/
     ctx.font = "50px Orbitron";
-    ctx.fillStyle = "#990000";
+    /*kolor*/
+    ctx.fillStyle = 'darkred';
+    /*wyświetlanie tekstu z punktami*/
     ctx.fillText(score,450,70);
     /*wykrywa kolizje, jeśli kolizja ma miejsce to wykonywanie funkcji animate jest kończone, co
     powoduje zatrzymanie się gry*/
@@ -112,8 +120,29 @@ function animate() {
     funkcja animate*/
     frame++;
 }
-/*wywołanie naszej funkcji*/
-animate();
+/*tło jak włączamy stronę*/
+let music = document.getElementById("music");
+window.onload = function(){
+    ctx.drawImage(background,0,0,canvas.width,canvas.height);
+    music.loop = true;
+    music.volume = 0.2;
+    music.play();
+}
+/*włączenie gry po wciśnięciu guzika, zniknięcie napisów z menu*/
+let text = document.getElementById("startgame");
+text.addEventListener("click",function(){
+    text.style.display = "none";
+    document.getElementById("title").style.display = "none";
+    document.getElementById("instr").style.display = "none";
+    animate();
+});
+/*jeszcze raz gra jak przegramy*/
+let playAgain = document.getElementById("playagain");
+playAgain.addEventListener("click",function(){
+    playAgain.style.display = "none";
+    window.location.reload();
+});
+
 /*kiedy wciśniemy spację to spacePressed zmienia się na true*/
 window.addEventListener('keydown',function(e){
     if(e.code === "Space"){
@@ -135,6 +164,19 @@ bang.src = 'images/bang.png';
 function handleColisions(){
     /*pętla po całej tablicy z przeszkodami*/
     for(let i = 0; i < obstaclesArray.length; i++){
+        //WARUNKI KOLIZJI
+        /*jeśli wspolrzedna x ptaszka jest mniejsza niż wspolrzedna przeszkody + jej szerokość
+        i jeśli wspolrzedna x + szerokość ptaszka jest większa od wspolrzednej x przeszkody
+        Te dwa warunki odpowiadają za to, że ptaszek nie przeskoczył przeszkody, znajduje się przed nią lub
+        na niej, dodatkowo:
+        kolizja z górną przeszkodą: 
+            wspolrzedna y ptaszka jest mniejsza od 0 dodać wysokośc górnej preszkody, czyli ptaszek jest jakby pod przeszkodą, bo
+            przenosimy przeszkodę na dół jakby i tak sprawdzamy to i jednocześnie wspolrzedna y ptaszka + wysokośc ptaszka 
+            jest większa od 0 czyli jest ciągle powyżej 0, bo jakby było mniej niż 0, gdy przenieśliśmy tą przeszkodę to by znaczyło, że
+            ptaszek przeszedł bezpiecznie pod górną przeszkodą
+        kolizja z dolną przeszkodą:
+            wspolrzedna y ptaszka jest wieksza od wysokości canvas odjąć wysokość przeszkody, czyli ptaszek jest nad przeszkodą
+            i jednocześnie ptaszka y + jego wyokość jest mniejszy od wysokości canvas, czyli ciągle jest w canvas*/
         if(bird.x < obstaclesArray[i].x + obstaclesArray[i].width && 
             bird.x + bird.width > obstaclesArray[i].x &&
             /*kolizja z top przeszkodą*/
@@ -150,12 +192,15 @@ function handleColisions(){
                     /*czcionka i rozmiar tekstu*/
                     ctx.font = "25px Orbitron";
                     /*kolor tekstu*/
-                    ctx.fillStyle = "#990000";
+                    ctx.fillStyle = 'darkred';
                     /*fillText() - rysuje tekst o określonych wartościach i kolorze określonym w fillStyle
                     fillText(text, x, y [, maxWidth]) - text, (x,y) to współrzędne punktu gdzie zacznięte
                     zostanie rysuwanie (w px)*/
-                    ctx.fillText("Game Over, your score is " + score, 120, canvas.height/2 - 10);
+                    ctx.fillText("Game Over, your score is " + score, 120, canvas.height/2 - 40);
                     /*byśmy mogli sprawdzić z zewnątrz, że kolizja miała miejsce*/
+                    playAgain.style.display = "block";
+                    music.pause();
+                    document.getElementById("over").play();
                     return true;
                 }
     }

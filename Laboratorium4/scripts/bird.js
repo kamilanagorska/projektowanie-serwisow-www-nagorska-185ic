@@ -12,10 +12,10 @@ class Bird {
         this.x = 150;
         /*pozycja pionowa*/
         this.y = 200;
-        /*prędkość pionowa naszego ptaszka, jak szybko opada i poszura
+        /*prędkość pionowa naszego ptaszka, jak szybko opada i porusza
         się w górę*/
         this.vy = 0;
-        /*oryginalne szerokość i wysokość*/
+        /*oryginalne szerokość i wysokość obrazka*/
         this.originalWidth = 401;
         this.originalHeight = 249;
         /*zeskalowane wymiary*/
@@ -23,7 +23,7 @@ class Bird {
         this.height = this.originalHeight/7;
         /* waga, która będzie ciągnąć ptaszka na dół*/
         this.weight = 1;
-        /* wykorzystana do ruszania skrzydłami*/
+        /*wykorzystana do ruszania skrzydłami*/
         this.frameX = 0;
     }
     /*metoda update - oblicza pozycję i szybkość dla każdej ramki*/
@@ -65,7 +65,14 @@ class Bird {
         /*mnoże razy 1.45 by dopasować bardziej obrazek do rozmiarów prostokąta, by uniknąć niewłaściwych kolizji dodatkowo przesuwam go troszkę 
         w lewo odejmując 13 i w górę odejmując 8*/
         /*drawImage() - rysuje obrazek
-        */
+        void ctx.drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)
+        image - nasz obrazek
+        sx, sy - wspolrzedne x i y lewego gornego rogu podprostokąta
+        obrazu źródłowego do narysowania
+        sWidth sHeight - szerokość podprostokąta obrazu źródłowego do narysowania, czyli oryginalne wymiary
+        dx, dy - wspolrzedne w obszarze docelowym, na ktorym na byc umieszony obraz zrodlowy
+        dWidth, dHeight - szerokosc i wysokosc rysowania obrazu w docelowym obszarze, pozwala to
+        na skalowanie obrazu*/
         ctx.drawImage(batSprite, this.frameX * this.originalWidth, 0, this.originalWidth, this.originalHeight, this.x-13, this.y-8, this.width*1.45, this.height*1.45);
     }
     /*latanie*/

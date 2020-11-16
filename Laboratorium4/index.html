@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>Flappy Bird Game</title>
+    <title>Flappy Bat Game</title>
+    <!--czcionka-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <audio id="music"><source src="music/music.mp3" type="audio/mpeg"></audio>
+    <audio id="over"><source src="music/over.mp3" type="audio/mpeg"></audio>
     <!--tu wyświetlana będzie gra-->
     <canvas id="canvas1"></canvas>
+    <div class="info">
+        <p id="title">Flappy Bat</p>
+        <button id="startgame">Start</button>
+        <p id="instr">Click Space to fly. Be careful and don't hit obstacles.</p>
+        <button id="playagain" style="display:none">Play Again</button>
+    </div>
 
     <!--kolejność plików jest ISTOTNA, będą czytane w takiej kolenosci-->
     <!--scrypt do czcionek-->
