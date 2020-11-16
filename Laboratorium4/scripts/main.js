@@ -158,6 +158,16 @@ window.addEventListener('keyup',function(e){
     bird.frameX = 0;
 });
 
+/*druga opcja sterowania: klikanie myszki*/
+window.addEventListener('mousedown',function(){
+        spacePressed = true;
+});
+window.addEventListener('mouseup',function(){
+        spacePressed = false;
+    /*trochę polepsza pracę skrzydeł*/
+    bird.frameX = 0;
+});
+
 /*kolizje*/
 const bang = new Image();
 bang.src = 'images/bang.png';
