@@ -5,55 +5,55 @@
             "artist": "The Cure",
             "albums": [
                 {
-                    "id": 1,
+                    "id": 11,
                     "title": "Kiss Me, Kiss Me, Kiss Me",
                     "year": 1987,
                     "genre": "Alternative rock",
                     "songs": [
                         {
-                            "id": 1,
+                            "id": 111,
                             "title": "The Kiss",
                             "length": 6,
                             "single": false
                         },
                         {
-                            "id": 2,
+                            "id": 112,
                             "title": "Catch",
                             "length": 2,
                             "single": true
                         },
                         {
-                            "id": 3,
+                            "id": 113,
                             "title": "Torture",
                             "length": 4,
                             "single": false
                         },
                         {
-                            "id": 4,
+                            "id": 114,
                             "title": "If Only Tonight We Could Sleep",
                             "length": 4,
                             "single": false
                         },
                         {
-                            "id": 5,
+                            "id": 115,
                             "title": "Why Can't I Be You?",
                             "length": 3,
                             "single": true
                         },
                         {
-                            "id": 6,
+                            "id": 116,
                             "title": "How Beautiful You Are...",
                             "length": 5,
                             "single": false
                         },
                         {
-                            "id": 7,
+                            "id": 117,
                             "title": "The Snakepit",
                             "length": 6,
                             "single": false
                         },
                         {
-                            "id": 8,
+                            "id": 118,
                             "title": "Hey You!",
                             "length": 2,
                             "single": false
@@ -61,37 +61,37 @@
                     ]
                 },
                 {
-                    "id": 2,
+                    "id": 12,
                     "title": "Desintegration",
                     "year": 1989,
                     "genre": "New wave",
                     "songs": [
                         {
-                            "id": 1,
+                            "id": 121,
                             "title": "Plainsong",
                             "length": 5,
                             "single": false
                         },
                         {
-                            "id": 2,
+                            "id": 122,
                             "title": "Pictures of You",
                             "length": 7,
                             "single": true
                         },
                         {
-                            "id": 3,
+                            "id": 123,
                             "title": "Closedown",
                             "length": 4,
                             "single": false
                         },
                         {
-                            "id": 4,
+                            "id": 124,
                             "title": "LoveSong",
                             "length": 3,
                             "single": true
                         },
                         {
-                            "id": 5,
+                            "id": 125,
                             "title": "Last Dance",
                             "length": 4,
                             "single": false
@@ -105,43 +105,43 @@
             "artist": "My Chemical Romance",
             "albums": [
                 {
-                    "id": 1,
+                    "id": 21,
                     "title": "I Brought You My Bullets, You Brought Me Your Love",
                     "year": 2002,
                     "genre": "Post-hardcore",
                     "songs": [
                         {
-                            "id": 1,
+                            "id": 211,
                             "title": "Romance",
                             "length": 1,
                             "single": false
                         },
                         {
-                            "id": 2,
+                            "id": 212,
                             "title": "Honey, This Mirror Isn't Big Enough for the Two of Us",
                             "length": 3,
                             "single": true
                         },
                         {
-                            "id": 3,
+                            "id": 213,
                             "title": "Vampires Will Never Hurt You",
                             "length": 5,
                             "single": true
                         },
                         {
-                            "id": 4,
+                            "id": 214,
                             "title": "Drowning Lessons",
                             "length": 4,
                             "single": false
                         },
                         {
-                            "id": 5,
+                            "id": 215,
                             "title": "Our Lady of Sorrows",
                             "length": 2,
                             "single": false
                         },
                         {
-                            "id": 6,
+                            "id": 216,
                             "title": "Headfirst for Halos",
                             "length": 3,
                             "single": true
