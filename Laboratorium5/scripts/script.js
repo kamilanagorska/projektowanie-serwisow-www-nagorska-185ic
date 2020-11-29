@@ -65,94 +65,77 @@ btn2.addEventListener("click", function(){
 //Jeżeli pominiemy dodatkowe opcje, domyślnie będzie wykonywane połączenie typu GET, które będzie służyć do pobrania danych.
 //zwraca obietnicę, która w przypadku rozwiązania pozytywnego zawiera dane zwrócone z serwera
 
-//liczenie sumy
+//Zadanie 1 - wybrane działanie na liczbach
+//funkcja licząca sumę
 function calculate(x,y){
-    const sum = x + y;
-    return sum;
-}
-function newObj(x,y){
-    let ob = {"title": x, "year": y};
-    return ob;
-}
-//funkcja, która jedynie pobiera dane w postaci JSON
-function loadData(nr) {
-    //fetch zwraca obietnicę
-    return fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${nr}`)
-                .then(response => {
-                    //then też zwraca nam obietnicę
-                    if (response.ok) {
-                        return Promise.resolve(response.json());
-                    } else {
-                        return Promise.reject(`Http error: ${response.status}`)
-                    }
-                 })
+    return x+y;
 };
-//Zadanie 1
+function letsCalculate(id, nr) {
+    return new Promise((resolve, reject) => {
+        if(id > 0 && id < 3) {
+            fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`)
+                .then(response => response.json())
+                .then(response => {
+                    let albumID = response.albums[0].id;
+                    let length = response.albums[0].songs[3].length;
+                    console.log("---- Przykład " + nr +":");
+                    console.log("------ ID albumu: " + albumID);
+                    console.log("------ Długość piosenki: " + length);
+                    resolve(calculate(albumID,length));
+                })
+        } else {
+            reject("Nie ma artysty o takim ID");
+        }
+    })
+};
 let btn3 = document.getElementById("btn3");
 btn3.addEventListener("click", function(){
-    //przykład1 - wywołanie funkcji dla artysty nr 1
-    //skoro loadData() zwróciło nam obietnicę, to możemy na nią zareagować
-    loadData("1")
-    .then(response => {
-        show(calculate(response.albums[1].id, response.albums[0].songs[3].length), "1", "ID albumu Desintegration: ", "Długość piosenki If Only Tonight We Could Sleep: ", "Suma: ", response.albums[1].id, response.albums[0].songs[3].length);
+    //przykład1 - dla artysty 1
+    letsCalculate(1, 1)
+        .then(data => console.log("------ Suma: " + data))
+        .catch(error => console.log("------ Błąd!!!!", error))
+        .finally(() => console.log("------ Koniec przykładu"))
+    //przykład2 - dla artysty 2
+    letsCalculate(1, 2)
+        .then(data => console.log("------ Suma: " + data))
+        .catch(error => console.log("------ Błąd!!!!", error))
+        .finally(() => console.log("------ Koniec przykładu"))
+})
+
+//Zadanie 2 - tworzenie nowego obiektu
+function newObject(x,y){
+    return ({"title": x, "genre": y});
+}
+function makeNewObject(id, nr) {
+    return new Promise((resolve, reject) => {
+        if(id > 0 && id < 3) {
+            fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`)
+                .then(response => response.json())
+                .then(response => {
+                    let title = response.albums[0].songs[4].title;
+                    let genre = response.albums[0].genre;
+                    console.log("---- Przykład " + nr +":");
+                    console.log("------ Tytuł utworu: " + title);
+                    console.log("------ Gatunek muzyczny: " + genre);
+                    resolve(newObject(title,genre));
+                })
+        } else {
+            reject("Nie ma artysty o takim ID");
+        }
     })
-    //jeśli error
-    .catch(error => {
-        console.log("Błąd: ", error);
-    })
-    //zawsze
-    .finally(() => {
-       console.log("Zawsze się pojawi na końcu");
-    });
-    //przykład2 - wywołanie funkcji dla artysty nr 2
-    loadData("2").then(response => {
-        show(calculate(response.albums[0].year, response.id), "2", "Rok wydania albumu I Brought You My Bullets, You Brought Me Your Love: ", "ID wykonawcy: ", "Suma: ", response.albums[0].year, response.id);
-    })
-     //jeśli error
-     .catch(error => {
-        console.log("Błąd: ", error);
-    })
-    //zawsze
-    .finally(() => {
-       console.log("Zawsze się pojawi na końcu");
-    });
-});
-//Zadanie 2
+};
 let btn4 = document.getElementById("btn4");
 btn4.addEventListener("click", function(){
     //przykład1 - dla artysty 1
-    loadData("1")
-    .then(response => {
-        show("","1","Album: ", "Rok: ", "Nowy obiekt:",response.albums[0].title,response.albums[1].year);
-        console.log(newObj(response.albums[0].title,response.albums[1].year));
-    })
-    //jeśli error
-    .catch(error => {
-        console.log("Błąd: ", error);
-    })
-    //zawsze
-    .finally(() => {
-       console.log("Zawsze się pojawi na końcu");
-    });
+    makeNewObject(1, 1)
+        .then(data => console.log("------ Nowy obiekt: ", data))
+        .catch(error => console.log("------ Błąd!!!!", error))
+        .finally(() => console.log("------ Koniec przykładu"))
     //przykład2 - dla artysty 2
-    loadData("2")
-    .then(response => {
-        show("","2","Utwór: ", "Rok: ", "Nowy obiekt:",response.albums[0].songs[2].title,response.albums[0].year);
-        console.log(newObj(response.albums[0].songs[2].title,response.albums[0].year));
-    })
-    //jeśli error
-    .catch(error => {
-        console.log("Błąd: ", error);
-    })
-    //zawsze
-    .finally(() => {
-       console.log("Zawsze się pojawi na końcu");
-    });
+    makeNewObject(1, 2)
+        .then(data => console.log("------ Nowy obiekt: ", data))
+        .catch(error => console.log("------ Błąd!!!!", error))
+        .finally(() => console.log("------ Koniec przykładu"))
 });
-
-
-
-
-
 
 
