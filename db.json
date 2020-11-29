@@ -93,18 +93,6 @@
                             "title": "Icing Sugar",
                             "length": 3,
                             "single": false
-                        },
-                        {
-                            "id": 15,
-                            "title": "The Perfect Girl",
-                            "length": 2,
-                            "single": false
-                        },
-                        {
-                            "id": 16,
-                            "title": "A Thousand Hours",
-                            "length": 3,
-                            "single": false
                         }
                     ]
                 },
@@ -166,18 +154,6 @@
                             "id": 9,
                             "title": "The Same Deep Water as You",
                             "length": 9,
-                            "single": false
-                        },
-                        {
-                            "id": 10,
-                            "title": "Desintegration",
-                            "length": 8,
-                            "single": false
-                        },
-                        {
-                            "id": 11,
-                            "title": "Homesick",
-                            "length": 7,
                             "single": false
                         }
                     ]
