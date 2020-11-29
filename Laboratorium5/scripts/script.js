@@ -238,3 +238,66 @@ btn6.addEventListener("click", function(){
     //przykład2
     getObjectsAsync(2,2);
 });
+
+//4. AJAX
+//Ajax - Asynchronous JavaScript and XML, umożliwia załadowanie zewnętrznego pliku i dodanie jego zawartości do strony internetowej
+//AJAX to sposób uzyskiwania dostępu do zewnętrznych plików ze strony internetowej, ale nie działa z plikami w Twoim systemie plików. 
+//Pliki, do których uzyskujesz dostęp, muszą znajdować się w Internecie: innymi słowy, nie może to być plik file: //, 
+//do którego uzyskujesz dostęp z własnego komputera. AJAX sprawia, że ​​nasza strona jest dynamiczna i pozwala nam odświeżać dane 
+//na naszych stronach internetowych bez odświeżania strony. Sprawia, że ​​strony użytkownika są interaktywne i zapewnia użytkownikowi wygodniejsze wrażenia.
+//Służy do opisania sposobu, w jaki używamy obiektu XMLHttpRequest do odświeżania części strony poprzez pobieranie danych z serwera za pośrednictwem 
+//żądań HTTP i manipulowanie modelem DOM w celu odświeżenia danych
+//Zadanie 1 - suma
+function letsCalculateAJAX(id, nr){
+    let url = `https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`;
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+    xhr.responseType = 'json';
+    xhr.send();
+    xhr.onload = function() {
+        let responseObj = xhr.response;
+        let albumID = responseObj.albums[0].id;
+        let length = responseObj.albums[0].songs[3].length;
+        show(calculate(albumID,length), nr, "ID albumu: ", "Długość utworu: ", "Suma: ", albumID, length);
+    }
+    xhr.onerror = function() {
+        console.log("Błąd!!!!!");
+    }
+};
+let btn7 = document.getElementById("btn7");
+btn7.addEventListener("click", function(){
+    //przykład1
+    letsCalculateAJAX(1,1);
+    //przykład2
+    letsCalculateAJAX(2,2);
+});
+
+//Zadanie 2 - nowy obiekt
+function makeNewObjectAJAX(id, nr){
+    let url = `https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`;
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+    xhr.responseType = 'json';
+    xhr.send();
+    xhr.onload = function() {
+        if(xhr.status === 200) {
+            let responseObj = xhr.response;
+            let title = responseObj.albums[0].songs[4].title;
+            let genre = responseObj.albums[0].genre;
+            show("", nr, "Tytuł utworu: ", "Gatunek muzyczny: ", "Nowy obiekt: ", title, genre);
+            console.log(newObject(title,genre));}
+        else {
+            console.log("Błąd!!!", xhr.status, xhr.statusText);
+        }
+    }
+    xhr.onerror = function() {
+        console.log("Błąd!!!!!");
+    }
+};
+let btn8 = document.getElementById("btn8");
+btn8.addEventListener("click", function(){
+    //przykład1
+    makeNewObjectAJAX(6,1);
+    //przykład2
+    makeNewObjectAJAX(2,2);
+});
