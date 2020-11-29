@@ -1,7 +1,10 @@
+let request = new XMLHttpRequest();
+//otwieramy plik
+request.open('GET', 'artists.json', true);
+//funkcja zwrotna to taka, która zostaje wykonana, gdy jakaś inna funkcja zakończy działanie
+//przekazywana jako parametr innej funkcji w celu późniejszego jej wywołania w tejże funkcji
 function loadJSON1(callback){
-    var xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'artists.json', true);
+
     //liczenie+ wyświetlanie
 }
 function callback1() {
