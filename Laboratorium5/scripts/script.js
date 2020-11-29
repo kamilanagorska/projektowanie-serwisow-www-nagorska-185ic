@@ -96,16 +96,16 @@ btn3.addEventListener("click", function(){
         .catch(error => console.log("------ Błąd!!!!", error))
         .finally(() => console.log("------ Koniec przykładu"))
     //przykład2 - dla artysty 2
-    letsCalculate(1, 2)
+    letsCalculate(2, 2)
         .then(data => console.log("------ Suma: " + data))
         .catch(error => console.log("------ Błąd!!!!", error))
         .finally(() => console.log("------ Koniec przykładu"))
-})
+});
 
 //Zadanie 2 - tworzenie nowego obiektu
 function newObject(x,y){
     return ({"title": x, "genre": y});
-}
+};
 function makeNewObject(id, nr) {
     return new Promise((resolve, reject) => {
         if(id > 0 && id < 3) {
@@ -132,10 +132,109 @@ btn4.addEventListener("click", function(){
         .catch(error => console.log("------ Błąd!!!!", error))
         .finally(() => console.log("------ Koniec przykładu"))
     //przykład2 - dla artysty 2
-    makeNewObject(1, 2)
+    makeNewObject(2, 2)
         .then(data => console.log("------ Nowy obiekt: ", data))
         .catch(error => console.log("------ Błąd!!!!", error))
         .finally(() => console.log("------ Koniec przykładu"))
 });
 
+//3. async/await
+//Deklaracja funkcji async definiuje funkcję asynchroniczną, która zwraca obiekt AsyncFunction.
+//Funkcja asynchroniczna to funkcja, która działa asynchroniczne poprzez zdarzenie pętli używając bezwarunkowego Promise do zwrócenia wyniku.
+//Funkcja async może zawierać wyrażenie await, które wstrzymuje wywołanie funkcji asynchronicznej i czeka na przekazaną 
+//deklarację Promise i wtedy wznawia wywołanie funkcji async oraz interpretuje jako wartość rozwiązaną.
+//Słowo async postawione przed funkcją sprawia, że dana funkcja zawsze zwraca obietnicę.
+//Słowo kluczowe await, sprawia, że JavaScript poczeka na wykonanie danej obietnicy (wykonywania asynchronicznych operacji) i zwrócenia przez nią wyniku
+//Słowa await możemy używać tylko wewnątrz funkcji poprzedzonej słowem async!!!!!
 
+//Zadanie 1 - suma ale z async
+function letsCalculateAsync(id, x, y) {
+    return new Promise((resolve,reject) => {
+        //dodatkowe zabezpieczenie
+        if(id>0 && id<3){
+            const sum = x+y;
+            resolve(sum);
+        } else {
+            reject("Nie ma artysty o takim ID");
+        }
+    })
+};
+//w tej funkcji mamy już zabezpieczenie, że niemożliwe jest szukanie artysty o wiekszym id niż dostępne, bo nie ma takiego adresu url, więc zgłaszany jest błąd, który jest łapany
+async function getValuesAsync(id, nr){
+    try {
+        //przerwanie
+        const response = await fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`);
+        if (response.ok) {
+            console.log("Status: ", response.status);
+            //przerwanie
+            let jsonObj = await response.json();
+            let albumID = jsonObj.albums[0].id;
+            let length = jsonObj.albums[0].songs[3].length;
+            console.log("---- Przykład " + nr +":");
+            console.log("------ ID albumu: " + albumID);
+            console.log("------ Długość piosenki: " + length);
+            //przerwanie
+            const data = await letsCalculateAsync(id,albumID,length);
+            console.log("------ Suma: " + data);
+        } else {
+            console.log("HTTP-Error: " + response.status);
+        }
+    } catch(error) {
+        console.error(error);
+    } finally {
+        console.log("------ Koniec przykładu");
+    }
+};
+let btn5 = document.getElementById("btn5");
+btn5.addEventListener("click", function(){
+    //przykład1
+    getValuesAsync(1,1);
+    //przykład2
+    getValuesAsync(2,2);
+})
+
+//Zadanie 2 - nowy object z async
+function makeObjectAsync(id, x, y) {
+    return new Promise((resolve,reject) => {
+        //dodatkowe zabezpieczenie
+        if(id>0 && id<3){
+            const obj = {"title": x, "genre": y};
+            resolve(obj);
+        } else {
+            reject("Nie ma artysty o takim ID");
+        }
+    })
+};
+//w tej funkcji mamy już zabezpieczenie, że niemożliwe jest szukanie artysty o wiekszym id niż dostępne, bo nie ma takiego adresu url, więc zgłaszany jest błąd, który jest łapany
+async function getObjectsAsync(id, nr){
+    try {
+        //przerwanie
+        const response = await fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`);
+        if (response.ok) {
+            console.log("Status: ", response.status);
+            //przerwanie
+            let jsonObj = await response.json();
+            let title = jsonObj.albums[0].songs[4].title;
+            let genre = jsonObj.albums[0].genre;
+            console.log("---- Przykład " + nr +":");
+            console.log("------ Tytuł utworu: " + title);
+            console.log("------ Gatunek muzyczny: " + genre);
+            //przerwanie
+            const data = await makeObjectAsync(id,title,genre);
+            console.log("------ Nowy obiekt: ", data);
+        } else {
+            console.log("HTTP-Error: " + response.status);
+        }
+    } catch(error) {
+        console.error(error);
+    } finally {
+        console.log("------ Koniec przykładu");
+    }
+};
+let btn6 = document.getElementById("btn6");
+btn6.addEventListener("click", function(){
+    //przykład1
+    getObjectsAsync(1,1);
+    //przykład2
+    getObjectsAsync(2,2);
+});
