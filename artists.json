@@ -1,0 +1,307 @@
+{
+    "artists": [
+        {
+            "artist": "The Cure",
+            "albums": [
+                {
+                    "title": "Kiss Me, Kiss Me, Kiss Me",
+                    "year": 1987,
+                    "genre": "Alternative rock",
+                    "songs": [
+                        {
+                            "title": "The Kiss",
+                            "length": 6,
+                            "single": false
+                        },
+                        {
+                            "title": "Catch",
+                            "length": 2,
+                            "single": true
+                        },
+                        {
+                            "title": "Torture",
+                            "length": 4,
+                            "single": false
+                        },
+                        {
+                            "title": "If Only Tonight We Could Sleep",
+                            "length": 4,
+                            "single": false
+                        },
+                        {
+                            "title": "Why Can't I Be You?",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "How Beautiful You Are...",
+                            "length": 5,
+                            "single": false
+                        },
+                        {
+                            "title": "The Snakepit",
+                            "length": 6,
+                            "single": false
+                        },
+                        {
+                            "title": "Hey You!",
+                            "length": 2,
+                            "single": false
+                        },
+                        {
+                            "title": "Just Like Heaven",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "All I Want",
+                            "length": 5,
+                            "single": false
+                        },
+                        {
+                            "title": "Hot Hot Hot!!!",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "One More Time",
+                            "length": 4,
+                            "single": false
+                        },
+                        {
+                            "title": "Like Cockatoos",
+                            "length": 3,
+                            "single": false
+                        },
+                        {
+                            "title": "Icing Sugar",
+                            "length": 3,
+                            "single": false
+                        },
+                        {
+                            "title": "The Perfect Girl",
+                            "length": 2,
+                            "single": false
+                        },
+                        {
+                            "title": "A Thousand Hours",
+                            "length": 3,
+                            "single": false
+                        },
+                        {
+                            "title": "Shiber and Shake",
+                            "length": 3,
+                            "single": false
+                        },
+                        {
+                            "title": "Fight",
+                            "length": 4,
+                            "single": false
+                        }
+                    ]
+                },
+                {
+                    "title": "Desintegration",
+                    "year": 1989,
+                    "genre": "New wave",
+                    "songs": [
+                        {
+                            "title": "Plainsong",
+                            "length": 5,
+                            "single": false
+                        },
+                        {
+                            "title": "Pictures of You",
+                            "length": 7,
+                            "single": true
+                        },
+                        {
+                            "title": "Closedown",
+                            "length": 4,
+                            "single": false
+                        },
+                        {
+                            "title": "LoveSong",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "Last Dance",
+                            "length": 4,
+                            "single": false
+                        },
+                        {
+                            "title": "Lullaby",
+                            "length": 4,
+                            "single": true
+                        },
+                        {
+                            "title": "Fascination Street",
+                            "length": 5,
+                            "single": true
+                        },
+                        {
+                            "title": "Prayers for Rain",
+                            "length": 6,
+                            "single": false
+                        },
+                        {
+                            "title": "The Same Deep Water as You",
+                            "length": 9,
+                            "single": false
+                        },
+                        {
+                            "title": "Desintegration",
+                            "length": 8,
+                            "single": false
+                        },
+                        {
+                            "title": "Homesick",
+                            "length": 7,
+                            "single": false
+                        },
+                        {
+                            "title": "Untitled",
+                            "length": 6,
+                            "single": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "artist": "My Chemical Romance",
+            "albums": [
+                {
+                    "title": "I Brought You My Bullets, You Brought Me Your Love",
+                    "year": 2002,
+                    "genre": "Post-hardcore",
+                    "songs": [
+                        {
+                            "title": "Romance",
+                            "length": 1,
+                            "single": false
+                        },
+                        {
+                            "title": "Honey, This Mirror Isn't Big Enough for the Two of Us",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "Vampires Will Never Hurt You",
+                            "length": 5,
+                            "single": true
+                        },
+                        {
+                            "title": "Drowning Lessons",
+                            "length": 4,
+                            "single": false
+                        },
+                        {
+                            "title": "Our Lady of Sorrows",
+                            "length": 2,
+                            "single": false
+                        },
+                        {
+                            "title": "Headfirst for Halos",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "Skylines and Turnstiles",
+                            "length": 3,
+                            "single": false
+                        },
+                        {
+                            "title": "Early Sunsets Over Monroeville",
+                            "length": 5,
+                            "single": false
+                        },
+                        {
+                            "title": "This Is the Best Day Ever",
+                            "length": 2,
+                            "single": false
+                        },
+                        {
+                            "title": "Cubicles",
+                            "length": 2,
+                            "single": false
+                        },
+                        {
+                            "title": "Demolition Lovers",
+                            "length": 6,
+                            "single": false
+                        }
+                    ]
+                },
+                {
+                    "title": "Three Cheers for Sweet Revenge",
+                    "year": 2004,
+                    "genre": "Emo",
+                    "songs": [
+                        {
+                            "title": "Helena",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "Give 'Em Hell, Kid",
+                            "length": 2,
+                            "single": false
+                        },
+                        {
+                            "title": "You Know What They Do to Guys Like Us in Prison",
+                            "length": 2,
+                            "single": false
+                        },
+                        {
+                            "title": "I'm Not Okay (I Promise)",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "The Ghost of You",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "The Jetset Life Is Gonna Kill You",
+                            "length": 3,
+                            "single": false
+                        },
+                        {
+                            "title": "Interlude",
+                            "length": 1,
+                            "single": false
+                        },
+                        {
+                            "title": "Thank You for the Venom",
+                            "length": 3,
+                            "single": true
+                        },
+                        {
+                            "title": "Hang 'Em High",
+                            "length": 2,
+                            "single": false
+                        },
+                        {
+                            "title": "It's Not a Fashion Statement, It's a Deathwish",
+                            "length": 3,
+                            "single": false
+                        },
+                        {
+                            "title": "Cemetery Drive",
+                            "length": 3,
+                            "single": false
+                        },
+                        {
+                            "title": "I Never Told You What I Do for a Living",
+                            "length": 3,
+                            "single": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
