@@ -105,18 +105,6 @@
                             "title": "A Thousand Hours",
                             "length": 3,
                             "single": false
-                        },
-                        {
-                            "id": 17,
-                            "title": "Shiber and Shake",
-                            "length": 3,
-                            "single": false
-                        },
-                        {
-                            "id": 18,
-                            "title": "Fight",
-                            "length": 4,
-                            "single": false
                         }
                     ]
                 },
@@ -190,12 +178,6 @@
                             "id": 11,
                             "title": "Homesick",
                             "length": 7,
-                            "single": false
-                        },
-                        {
-                            "id": 12,
-                            "title": "Untitled",
-                            "length": 6,
                             "single": false
                         }
                     ]
