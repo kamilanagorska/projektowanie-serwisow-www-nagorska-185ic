@@ -2,7 +2,7 @@
 //W procesie asynchronicznym wszystkie operacje są wykonywane kolejno jedna po drugiej w jednym wątku, jednak możemy
 //oczekiwać na zakończenie operacji asynchronicznej bez długotrwałego blokowania tego wątku
 
-//funkcja do wyświetlania odp w punkcie 1.
+//funkcja do wyświetlania odp
 function show(respond, nr, tx1, tx2, tx3, v1, v2) {
     console.log("---- Przykład " + nr + ":");
     console.log("------ " + tx1 + v1);
@@ -183,7 +183,7 @@ async function getValuesAsync(id, nr,a,s){
         }
     } catch(error) {
         //nie łapie erroru typu not found, bo to też odpowiedź dla niego
-        console.error(error);
+        console.log("Błąd!");
     } finally {
         console.log("------ Koniec przykładu");
     }
@@ -257,10 +257,9 @@ btn6.addEventListener("click", function(){
 function letsCalculateAJAX(id, nr){
     let url = `https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`;
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', url);
+    xhr.open('GET', url, true);
     xhr.responseType = 'json';
-    xhr.send();
-    //sukces zapytania
+    //sukces 
     xhr.onload = function() {
         //jeśli status 200 to odpowiedz dobra
         if(xhr.status === 200) {
@@ -278,6 +277,8 @@ function letsCalculateAJAX(id, nr){
     xhr.onerror = function() {
         console.log("Błąd!!!!!");
     }
+    //send na koncu bo dalam ze polacenia asynchorniczne i inaczej sie nie da bo error
+    xhr.send();
 };
 let btn7 = document.getElementById("btn7");
 btn7.addEventListener("click", function(){
