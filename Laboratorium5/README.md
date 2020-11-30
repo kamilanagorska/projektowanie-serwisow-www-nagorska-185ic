@@ -16,7 +16,7 @@ Sam plik JSON znajduje się bezpośrednio w tym repozytorium pod nazwą db.json.
 
 #### Funkcja zwrotna (callback)
 Funkcja zwrotna, najprościej mówiąc jest to funkcja, która zostanie wykonana, gdy jakaś inna funkcja zakończy działanie. 
-### - Task 1:
+#### - Task 1:
   "wykorzystaj funkcję zwrotną do pobrania dwóch różnych wartości liczbowych (z różnych poziomów zagnieżdżenia) z ww. obiektu JSON i wykonaj wybrane działanie na tych liczbach"
 
   Wykorzystałam do tego metodę .getJSON(url, [data], [success]). Przyjmuje ona jeden obowiązkowy parametr url, który wskazuje url, któremu mamy wysłać żądanie. Dodatkowo przekazałam tej metodzie również parametr opcjonalny success, który wskazuje co ma się stać, gdy żadanie się powiedzie. Jest to nasza FUNKCJA ZWROTNA.
