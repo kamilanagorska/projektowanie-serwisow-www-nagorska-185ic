@@ -9,7 +9,9 @@ Na stronie umieściłam przyciski, które po naciśnięciu wyświetlają w konso
 ![1](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium5/images/1.png?raw=true)
 
 Wszystkie zadania wykonałam na moim pliku JSON, który umieściłam na "Fake Online Rest server".
+
 [link](https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/)
+
 Sam plik JSON znajduje się bezpośrednio w tym repozytorium pod nazwą db.json. [db.json](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/db.json)
 
 #### Funkcja zwrotna (callback)
