@@ -21,6 +21,8 @@ Funkcja zwrotna, najprościej mówiąc jest to funkcja, która zostanie wykonana
 
   Wykorzystałam do tego metodę .getJSON(url, [data], [success]). Przyjmuje ona jeden obowiązkowy parametr url, który wskazuje url, któremu mamy wysłać żądanie. Dodatkowo przekazałam tej metodzie również parametr opcjonalny success, który wskazuje co ma się stać, gdy żadanie się powiedzie. Jest to nasza FUNKCJA ZWROTNA.
 
-  W funkcji zwrotnej pobrałam dwie wartości liczbowe i wykonałam na nich jakieś działanie. Zrobiłam to dla dwóch przykładów (dla artysty o ID = 1). W przykładzie 1 dodaję wartości, w przykładzie 2 odejmuję.
+  W funkcji zwrotnej pobrałam dwie wartości liczbowe i wykonałam na nich jakieś działanie. 
+  Zrobiłam to dla dwóch przykładów (dla artysty o ID = 1). 
+  W przykładzie 1 dodaję wartości, w przykładzie 2 odejmuję.
 
   ![2](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium5/images/2.png?raw=true)
