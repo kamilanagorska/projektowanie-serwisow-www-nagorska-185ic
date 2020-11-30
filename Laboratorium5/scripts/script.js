@@ -74,6 +74,7 @@ function letsCalculate(id, nr) {
     return new Promise((resolve, reject) => {
         if(id > 0 && id < 3) {
             fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`)
+            //then() - pozwala reagować zarówno na pozytywne rozwiązanie obietnicy jak i negatywne
                 .then(response => response.json())
                 .then(response => {
                     let albumID = response.albums[0].id;
@@ -81,9 +82,11 @@ function letsCalculate(id, nr) {
                     console.log("---- Przykład " + nr +":");
                     console.log("------ ID albumu: " + albumID);
                     console.log("------ Długość piosenki: " + length);
+                    //Gdy obietnica kończy się powodzeniem (np. dane się wczytają), powinniśmy wywołać funkcję resolve(), przekazując do niej rezultat działania
                     resolve(calculate(albumID,length));
                 })
         } else {
+            //W przypadku błędów powinniśmy wywołać funkcję reject(), do której przekażemy błędne dane lub komunikat błędu.
             reject("!!!!!! Nie ma artysty o takim ID");
         }
     })
@@ -93,7 +96,9 @@ btn3.addEventListener("click", function(){
     //przykład1 - dla artysty 1
     letsCalculate(1, 1)
         .then(data => console.log("------ Suma: " + data))
+        //reakcja na negatywną odpowiedź
         .catch(error => console.log("------ Błąd!!!!", error))
+        //odpalana jest zawsze po zakończeniu Promise, bez względu czy zakończyło się to powodzeniem czy nie
         .finally(() => console.log("------ Koniec przykładu"))
     //przykład2 - dla artysty 2
     letsCalculate(2, 2)
@@ -185,6 +190,7 @@ async function getValuesAsync(id, nr,a,s){
         //nie łapie erroru typu not found, bo to też odpowiedź dla niego
         console.log("Błąd!");
     } finally {
+        //wyświetla się zawsze na końcu, niezależnie od powodzenia 
         console.log("------ Koniec przykładu");
     }
 };
