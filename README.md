@@ -13,6 +13,7 @@ Opis: [Laboratorium2](https://github.com/kamilanagorska/projektowanie-serwisow-w
 ### Laboratorium 4
 Gra przeglądarkowa wykonana jedynie z użyciem Vanilla JavaScript [Laboratorium4](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium4)
 ### Laboratorium 5
+6 poleceń z wykorzystaniem asynchronicznego JavaScript [Laboratorium5](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium5)
 ### Laboratorium 6
 ### Laboratorium 7
 ### Laboratorium 8
