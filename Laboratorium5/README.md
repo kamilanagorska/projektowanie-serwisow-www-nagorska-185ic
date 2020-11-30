@@ -17,12 +17,24 @@ Sam plik JSON znajduje się bezpośrednio w tym repozytorium pod nazwą db.json.
 #### Funkcja zwrotna (callback)
 Funkcja zwrotna, najprościej mówiąc jest to funkcja, która zostanie wykonana, gdy jakaś inna funkcja zakończy działanie. 
 #### - Task 1:
-  "wykorzystaj funkcję zwrotną do pobrania dwóch różnych wartości liczbowych (z różnych poziomów zagnieżdżenia) z ww. obiektu JSON i wykonaj wybrane działanie na tych liczbach"
+"wykorzystaj funkcję zwrotną do pobrania dwóch różnych wartości liczbowych (z różnych poziomów zagnieżdżenia) z ww. obiektu JSON i wykonaj wybrane działanie na tych liczbach"
 
-  Wykorzystałam do tego metodę .getJSON(url, [data], [success]). Przyjmuje ona jeden obowiązkowy parametr url, który wskazuje url, któremu mamy wysłać żądanie. Dodatkowo przekazałam tej metodzie również parametr opcjonalny success, który wskazuje co ma się stać, gdy żadanie się powiedzie. Jest to nasza FUNKCJA ZWROTNA.
+Wykorzystałam do tego metodę .getJSON(url, [data], [success]). Przyjmuje ona jeden obowiązkowy parametr url, który wskazuje url, któremu mamy wysłać żądanie. Dodatkowo przekazałam tej metodzie również parametr opcjonalny success, który wskazuje co ma się stać, gdy żadanie się powiedzie. Jest to nasza FUNKCJA ZWROTNA.
 
-  W funkcji zwrotnej pobrałam dwie wartości liczbowe i wykonałam na nich jakieś działanie. 
-  Zrobiłam to dla dwóch przykładów (dla artysty o ID = 1). 
-  W przykładzie 1 dodaję wartości, w przykładzie 2 odejmuję.
+W funkcji zwrotnej pobrałam dwie wartości liczbowe (z różnych poziomów zagnieżdżenia) i wykonałam na nich jakieś działanie. 
 
-  ![2](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium5/images/2.png?raw=true)
+Zrobiłam to dla dwóch przykładów (dla artysty o ID = 1). 
+W przykładzie 1 dodaję wartości, w przykładzie 2 odejmuję.
+
+![2](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium5/images/2.png?raw=true)
+
+#### - Task 2:
+"wykorzystaj funkcję zwrotną do pobrania dwóch różnych łańcuchów znakowych (z różnych poziomów zagnieżdżenia) z ww. obiektu JSON i za pomocą template strings stwórz łańcuch znakowy z użyciem obu wcześniej wyekstrahowanych łańcuchów znakowych."
+
+Tutaj tam samo jak w Task 1 użyłam metody .getJSON i przekazałam jej funkcję zwrotną, która pobiera dwa łańcuchy znakowe (z różnych poziomów zagnieżdżenia) i następnie łączy je i tworzy nowy łańcuch za pomocą template strings. 
+
+Zrobiłam to dla dwóch przykładów (dla artysty o ID = 2).
+
+![3](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium5/images/3.png?raw=true)
+
+
