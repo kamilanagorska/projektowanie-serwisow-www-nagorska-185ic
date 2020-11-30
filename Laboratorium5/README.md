@@ -14,6 +14,14 @@ Wszystkie zadania wykonałam na moim pliku JSON, który umieściłam na "Fake On
 
 Sam plik JSON znajduje się bezpośrednio w tym repozytorium pod nazwą db.json. [db.json](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/db.json)
 
+#### Spis treści
+- Funkcja zwrotna [link](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium5#1-funkcja-zwrotna-callback)
+- Obiekt Promise [link](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium5#2-obiekt-promise)
+- Async/await [link](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium5#3-asyncawait)
+- AJAX [link](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium5#4-ajax)
+- Metoda fetch [link](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium5#5-metoda-fetch)
+- Biblioteka axios [link](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium5#6-biblioteka-axios)
+
 #### 1. Funkcja zwrotna (callback)
 Funkcja zwrotna, najprościej mówiąc jest to funkcja, która zostanie wykonana, gdy jakaś inna funkcja zakończy działanie. 
 #### - Task 1:
