@@ -84,7 +84,7 @@ function letsCalculate(id, nr) {
                     resolve(calculate(albumID,length));
                 })
         } else {
-            reject("Nie ma artysty o takim ID");
+            reject("!!!!!! Nie ma artysty o takim ID");
         }
     })
 };
@@ -120,7 +120,7 @@ function makeNewObject(id, nr) {
                     resolve(newObject(title,genre));
                 })
         } else {
-            reject("Nie ma artysty o takim ID");
+            reject("!!!!!! Nie ma artysty o takim ID");
         }
     })
 };
@@ -147,39 +147,42 @@ btn4.addEventListener("click", function(){
 //Słowo kluczowe await, sprawia, że JavaScript poczeka na wykonanie danej obietnicy (wykonywania asynchronicznych operacji) i zwrócenia przez nią wyniku
 //Słowa await możemy używać tylko wewnątrz funkcji poprzedzonej słowem async!!!!!
 
-//Zadanie 1 - suma ale z async
+//Zadanie 1 - suma ale z async tylko dla artysty1
 function letsCalculateAsync(id, x, y) {
     return new Promise((resolve,reject) => {
         //dodatkowe zabezpieczenie
-        if(id>0 && id<3){
+        if(id === 1){
+            console.log("------ ID albumu: " + x);
+            console.log("------ Długość piosenki: " + y);
             const sum = x+y;
             resolve(sum);
         } else {
-            reject("Nie ma artysty o takim ID");
+            reject("!!!!!! Nie ma artysty o takim ID");
         }
     })
 };
-//w tej funkcji mamy już zabezpieczenie, że niemożliwe jest szukanie artysty o wiekszym id niż dostępne, bo nie ma takiego adresu url, więc zgłaszany jest błąd, który jest łapany
-async function getValuesAsync(id, nr){
+async function getValuesAsync(id, nr,a,s){
     try {
         //przerwanie
-        const response = await fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`);
-        if (response.ok) {
-            console.log("Status: ", response.status);
+        const response = await fetch("https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/1");
+        if (response.status === 200 && a >=0 && a <=1 && s >=0 && s<=4) {
             //przerwanie
             let jsonObj = await response.json();
-            let albumID = jsonObj.albums[0].id;
-            let length = jsonObj.albums[0].songs[3].length;
+            let albumID = jsonObj.albums[a].id;
+            let length = jsonObj.albums[a].songs[s].length;
             console.log("---- Przykład " + nr +":");
-            console.log("------ ID albumu: " + albumID);
-            console.log("------ Długość piosenki: " + length);
             //przerwanie
             const data = await letsCalculateAsync(id,albumID,length);
             console.log("------ Suma: " + data);
         } else {
-            console.log("HTTP-Error: " + response.status);
+            if(a < 0 || s < 0 || a > 1 || s > 4) {
+                console.log("!!!!!! Nie ma takiej piosenki lub albumu");
+            } else {
+                console.log("!!!!!! Błąd: ", response.status, response.statusText);
+            }
         }
     } catch(error) {
+        //nie łapie erroru typu not found, bo to też odpowiedź dla niego
         console.error(error);
     } finally {
         console.log("------ Koniec przykładu");
@@ -188,42 +191,45 @@ async function getValuesAsync(id, nr){
 let btn5 = document.getElementById("btn5");
 btn5.addEventListener("click", function(){
     //przykład1
-    getValuesAsync(1,1);
+    getValuesAsync(1,1, 0, 3);
     //przykład2
-    getValuesAsync(2,2);
+    getValuesAsync(1,2, 1, 2);
 })
 
-//Zadanie 2 - nowy object z async
+//Zadanie 2 - nowy object z async, tylko dla artysty 2
 function makeObjectAsync(id, x, y) {
     return new Promise((resolve,reject) => {
         //dodatkowe zabezpieczenie
-        if(id>0 && id<3){
+        if(id === 2){
             const obj = {"title": x, "genre": y};
+            console.log("------ Tytuł utworu: " + x);
+            console.log("------ Gatunek muzyczny: " + y);
             resolve(obj);
         } else {
-            reject("Nie ma artysty o takim ID");
+            reject("!!!!!! Nie ma artysty o takim ID");
         }
     })
 };
 //w tej funkcji mamy już zabezpieczenie, że niemożliwe jest szukanie artysty o wiekszym id niż dostępne, bo nie ma takiego adresu url, więc zgłaszany jest błąd, który jest łapany
-async function getObjectsAsync(id, nr){
+async function getObjectsAsync(id, nr, s){
     try {
         //przerwanie
-        const response = await fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`);
-        if (response.ok) {
-            console.log("Status: ", response.status);
+        const response = await fetch("https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/2");
+        if (response.status === 200 && s >=0 && s<=5) {
             //przerwanie
             let jsonObj = await response.json();
-            let title = jsonObj.albums[0].songs[4].title;
+            let title = jsonObj.albums[0].songs[s].title;
             let genre = jsonObj.albums[0].genre;
             console.log("---- Przykład " + nr +":");
-            console.log("------ Tytuł utworu: " + title);
-            console.log("------ Gatunek muzyczny: " + genre);
             //przerwanie
             const data = await makeObjectAsync(id,title,genre);
             console.log("------ Nowy obiekt: ", data);
         } else {
-            console.log("HTTP-Error: " + response.status);
+            if(s>5 || s<0){
+                console.log("!!!!!! Nie ma takiej piosenki");
+            } else {
+                console.log("!!!!!! Błąd: ", response.status, response.statusText);
+            }
         }
     } catch(error) {
         console.error(error);
@@ -234,9 +240,9 @@ async function getObjectsAsync(id, nr){
 let btn6 = document.getElementById("btn6");
 btn6.addEventListener("click", function(){
     //przykład1
-    getObjectsAsync(1,1);
+    getObjectsAsync(2,1,1);
     //przykład2
-    getObjectsAsync(2,2);
+    getObjectsAsync(2,2,4);
 });
 
 //4. AJAX
@@ -254,12 +260,21 @@ function letsCalculateAJAX(id, nr){
     xhr.open('GET', url);
     xhr.responseType = 'json';
     xhr.send();
+    //sukces zapytania
     xhr.onload = function() {
-        let responseObj = xhr.response;
-        let albumID = responseObj.albums[0].id;
-        let length = responseObj.albums[0].songs[3].length;
-        show(calculate(albumID,length), nr, "ID albumu: ", "Długość utworu: ", "Suma: ", albumID, length);
+        //jeśli status 200 to odpowiedz dobra
+        if(xhr.status === 200) {
+            let responseObj = xhr.response;
+            let albumID = responseObj.albums[0].id;
+            let length = responseObj.albums[0].songs[3].length;
+            show(calculate(albumID,length), nr, "ID albumu: ", "Długość utworu: ", "Suma: ", albumID, length);
+        } else {
+            //jak nie 200 to coś poszło nie tak, np nie ma takiej strony internetowej
+            console.log("Błąd: ", xhr.statusText);
+        }
     }
+    //on error nie zalicza HTTP errorów jako błąd ale odpowiedź z serwera, więc dodatkowo sprawdzam ifem wyżej
+    //to sie wyswietli np gdy nie ma polaczenia z serwerem
     xhr.onerror = function() {
         console.log("Błąd!!!!!");
     }
@@ -297,7 +312,104 @@ function makeNewObjectAJAX(id, nr){
 let btn8 = document.getElementById("btn8");
 btn8.addEventListener("click", function(){
     //przykład1
-    makeNewObjectAJAX(6,1);
+    makeNewObjectAJAX(1,1);
     //przykład2
     makeNewObjectAJAX(2,2);
 });
+
+//5. metoda fetch
+//Zadanie 1 - suma
+function calculateFetch(id, nr){
+    if(id > 0 && id < 3) {
+        fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`)
+            .then(response => response.json())
+            .then(response => {
+                let albumID = response.albums[0].id;
+                let length = response.albums[0].songs[3].length;
+                show(calculate(albumID,length), nr, "ID albumu: ", "Długość utworu: ", "Suma: ", albumID, length);
+            })
+            .catch(error => console.log("Błąd!!! ", error))
+    } else {
+        console.log("!!!!!! Nie ma artysty o takim ID");
+    }
+}
+let btn9 = document.getElementById("btn9");
+btn9.addEventListener("click", function(){
+    //przyklad1
+    calculateFetch(1,1);
+    //przyklad2
+    calculateFetch(2,2);
+})
+//Zadanie 2 - nowy objekt
+function makeNewObjectFetch(id, nr){
+    if(id > 0 && id < 3) {
+        fetch(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`)
+            .then(response => response.json())
+            .then(response => {
+                let title = response.albums[0].songs[4].title;
+                let genre = response.albums[0].genre;
+                show("", nr, "Tytuł utworu: ", "Gatunek muzyczny: ", "Nowy obiekt: ", title, genre);
+                console.log(newObject(title,genre));
+            })
+            .catch(error => console.log("Błąd!!! ", error))
+    } else {
+        console.log("!!!!!! Nie ma artysty o takim ID");
+    }
+}
+let btn10 = document.getElementById("btn10");
+btn10.addEventListener("click", function(){
+    //przyklad1
+    makeNewObjectFetch(1,1);
+    //przyklad2
+    makeNewObjectFetch(2,2);
+})
+
+//6. biblioteka axios
+//Zadanie 1 - suma
+function calculateAxios(id,nr){
+    axios.get(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`)
+    .then(function (response) {
+        let albumID = response.data.albums[0].id;
+        let length = response.data.albums[0].songs[3].length;
+        show(calculate(albumID,length), nr, "ID albumu: ", "Długość utworu: ", "Suma: ", albumID, length);
+    })
+    .catch (function (error) {
+        if(id > 3 || id <0){
+            console.log("Nie ma artysty o takim ID");
+        } else{
+        console.log("Błąd!!! ", error);
+        }
+    })
+}
+let btn11 = document.getElementById("btn11");
+btn11.addEventListener("click", function(){
+    //przyklad1
+    calculateAxios(1,1);
+    //przyklad2
+    calculateAxios(2,2);
+})
+//Zadanie 2 - object
+function makeNewObjectAxios(id,nr){
+    axios.get(`https://my-json-server.typicode.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/artists/${id}`)
+    .then(function (response) {
+        let title = response.data.albums[0].songs[4].title;
+        let genre = response.data.albums[0].genre;
+        show("", nr, "Tytuł utworu: ", "Gatunek muzyczny: ", "Nowy obiekt: ", title, genre);
+        console.log(newObject(title,genre));
+    })
+    .catch (function (error) {
+        if(id > 3 || id <0){
+            console.log("Nie ma artysty o takim ID");
+        } else{
+        console.log("Błąd!!! ", error);
+        }
+    })
+}
+let btn12 = document.getElementById("btn12");
+btn12.addEventListener("click", function(){
+    //przyklad1
+    makeNewObjectAxios(1,1);
+    //przyklad2
+    makeNewObjectAxios(2,2);
+})
+
