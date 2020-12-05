@@ -39,7 +39,7 @@ Jest to komponent klasowy. Znajduje się w nim formularz, do którego wpisuje si
 
 ![7](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium6/images/7.png?raw=true)
 
-W komponencie tym użyłam konstruktora, jako że będę inicjować stan, ponieważ wartość wpisywana do formularza zmienia się w czasie "pracy" aplikacji. Dodatkowo wiążę metody obsługi zdarzeń z instanjcą komponentu. Użyty przeze mnie bind nadpisuje metode przy pomocy zbindowanej funkcji, znaczy to, że funkcja zostaja niezmienna od powstania komponentu aż do jego zniszczenia. 
+W komponencie tym użyłam konstruktora, jako że będę inicjować stan, ponieważ wartość wpisywana do formularza zmienia się w czasie "pracy" aplikacji. Dodatkowo wiążę metody obsługi zdarzeń z instancją komponentu. Użyty przeze mnie "bind" nadpisuje metode przy pomocy zbindowanej funkcji, znaczy to, że funkcja zostaje niezmienna od powstania komponentu aż do jego zniszczenia. 
 
 ![8](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium6/images/8.png?raw=true)
 
@@ -47,7 +47,7 @@ Poniżej konstruktora zdefiniowałam dwie funkcje, które zdarzą się, gdy nast
 
 ![9](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium6/images/9.png?raw=true)
 
-W handleChange aktualizowana zostaje wartość wyrażenia opisane w state. Dzieje się to za pomocą setState().
+W handleChange aktualizowana zostaje wartość wyrażenia opisanego w state. Dzieje się to za pomocą setState().
 
 W handleClick wyświetlany jest alert z wiadomością i wpisanym imieniem.
 
@@ -129,6 +129,6 @@ Komponent potomny względem App. Tworzone są tutaj kolejne pozycje listy zakup�
 
 Wykorzystałam listę z Bootstrapa. 
 
-Określiłam też typy dla przekazywanych atrybutów. Oba muszą bić stringiem.
+Określiłam też typy dla przekazywanych atrybutów. Oba muszą być stringiem.
 
 ![27](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium6/images/27.png?raw=true)
