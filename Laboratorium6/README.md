@@ -20,11 +20,11 @@ Utworzyłam komponent klasowy App.jsx, który jest jednocześnie komponentem nad
 ![2](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium6/images/2.png?raw=true)
 
 #### Komponent Navbar (komponent potomny, css, bootstrap)
-W komponencie tym znajduje się pasek "menu" (navbar). Wykorzystałam tutaj Bootsrapa. 
+W komponencie tym znajduje się pasek "menu" (navbar). Wykorzystałam tutaj Bootstrapa. 
 
 ![3](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium6/images/3.png?raw=true)
 
-By korzystać z Bootsrapa najpiew musiałam pobrać plik css Bootsrapa za pomocą komenty npm install --save bootstrap. Następnie zaimportowałam ten plik w src/index.js.
+By korzystać z Bootsrapa najpiew musiałam pobrać plik css Bootstrapa za pomocą komenty npm install --save bootstrap. Następnie zaimportowałam ten plik w src/index.js.
 
 ![4](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium6/images/4.png?raw=true)
 
