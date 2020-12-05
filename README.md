@@ -15,6 +15,7 @@ Gra przeglądarkowa wykonana jedynie z użyciem Vanilla JavaScript [Laboratorium
 ### Laboratorium 5
 6 poleceń z wykorzystaniem asynchronicznego JavaScript [Laboratorium5](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium5)
 ### Laboratorium 6
+Prosta aplikacja stworzona za pomocą React'a [Laboratorium6](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium6)
 ### Laboratorium 7
 ### Laboratorium 8
 
