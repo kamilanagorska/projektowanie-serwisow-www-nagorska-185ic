@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 //musialam zainstalowac icons
 export default function SimpleAccordion() {
-
   return (
     <div style={{backgroundColor: '#f0f2f2', width: '70%', margin: 'auto'}}>
       <Accordion style={{backgroundColor: '#f7f7f7'}}>
@@ -24,7 +23,6 @@ export default function SimpleAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-
       <Accordion style={{backgroundColor: '#edf0f0'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -39,7 +37,6 @@ export default function SimpleAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-
       <Accordion style={{backgroundColor: '#e3e8e8'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

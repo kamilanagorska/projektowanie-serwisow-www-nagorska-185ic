@@ -18,7 +18,7 @@ const Chat = () => (
     <Selector />
     <Range />
     <Accept />
-    <button type="button" class="btn btn-outline-secondary btn-lg" style={{marginLeft: '5px'}}>Start chatting</button>
+    <button type="button" className="btn btn-outline-secondary btn-lg" style={{marginLeft: '5px'}}>Start chatting</button>
   </div>
 </div>
 );

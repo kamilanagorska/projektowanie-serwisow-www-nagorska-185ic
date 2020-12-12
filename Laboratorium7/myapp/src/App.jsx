@@ -26,28 +26,22 @@ class App extends Component {
   return (
     <Router>
       <div>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand disabled">Meet new friends</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <a className="navbar-brand disabled">Meet new friends</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link">
-            <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>home</Link>
-            <span class="sr-only"></span>
-            </a>
-            <a class="nav-link">
-            <Link to="/chat" style={{ textDecoration: 'none', color: 'black'}}>chat</Link>
-            </a>
-            <a class="nav-link">
-            <Link to="/users" style={{ textDecoration: 'none', color: 'black' }}>users</Link>
-            </a>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <Link to="/" style={{ textDecoration: 'none', color: 'black' }} className="nav-link">home
+            <span className="sr-only"></span></Link>
+            <Link to="/chat" style={{ textDecoration: 'none', color: 'black'}} className="nav-link">chat</Link>
+            <Link to="/users" style={{ textDecoration: 'none', color: 'black' }} className="nav-link">users</Link>
           </div>
         </div>
         </nav>
         <Switch>
-          {/* tu są moje komponenty wraz z tracami*/}
+          {/* tu są moje komponenty wraz z trasami*/}
           <Route path="/chat">
             <Chat />
           </Route>
