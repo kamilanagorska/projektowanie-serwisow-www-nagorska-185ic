@@ -158,7 +158,7 @@ Załadowane:
 ![37](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium7/images/37.png?raw=true)
 ![38](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium7/images/38.png?raw=true)
 
-Podstrona z listą użytkowników. Wykorzystałam tutaj state i zdefiniowałam 14 użytkowników wraz z informacjami o nich. Wygenerowałam dla każdego komponent List. Prócz List użyłam jeszcze dwóch innych komponentów Material UI. Wszystko umieściłam w Card z Bootstrapa.
+Podstrona z listą użytkowników. Wykorzystałam tutaj state i zdefiniowałam 14 użytkowników wraz z informacjami o nich. Wygenerowałam dla każdego komponent List. Prócz List użyłam jeszcze dwóch innych komponentów Material UI. Wszystko umieściłam w Card z Bootstrapa. (Burak to tureckie imię, nie ma to na celu nikogo obrazić!)
 
 ![39](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium7/images/39.png?raw=true)
 
