@@ -17,5 +17,6 @@ Gra przeglądarkowa wykonana jedynie z użyciem Vanilla JavaScript [Laboratorium
 ### Laboratorium 6
 Prosta aplikacja stworzona za pomocą React'a [Laboratorium6](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium6)
 ### Laboratorium 7
+Wykorzystanie Material UI oraz React-Router [Laboratorium7](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/tree/main/Laboratorium7)
 ### Laboratorium 8
 

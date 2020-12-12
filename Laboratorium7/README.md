@@ -5,10 +5,10 @@ Stworzyłam szablon strony umożliwiającej poznawanie ludzi z różnych krajów
 
 
 #### React-Route
-Jak wcześniej napisałam moja strona składa się w 3 "podstron". Zdefiniowałam je w komponencie Apps.jsx.
+Jak wcześniej napisałam moja strona składa się w 3 "podstron". Zdefiniowałam je w komponencie App.jsx.
 
 Najpierw zaimportowałam potrzebne komponenty React-Route:
-- BrowserRouter, który odrazu przemianowałam na Router, jest to główny komponent, w kótym umieszczamy całą definicję "routingu"
+- BrowserRouter, który odrazu przemianowałam na Router, jest to główny komponent, w którym umieszczamy całą definicję "routingu"
 - Switch, renderuje pierwsze dziecko <Route>, które pasuje do lokalizaji
 - Route, pozwala na zdefiniowanie poszczególnych ścieżek i powiązanie ich z komponentami
 - Link, służy do przełączania się pomiędzy ścieżkami "routingu".
