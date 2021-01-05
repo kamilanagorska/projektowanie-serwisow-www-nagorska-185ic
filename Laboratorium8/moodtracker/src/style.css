@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arizonia');
+
+.navbar-brand {
+    font-family: 'Open Sans Condensed';
+    font-weight: bolder;
+}
+
+.fonty {
+  font-family: 'Arizonia';
+}
+
+.year {
+  font-size: 500%;
+}
+.set {
+  font-family: Open Sans Condensed;
+  font-size: 300%;
+}
+
+.fontyy {
+  font-family: Open Sans Condensed;
+}
+
+.tracking{
+  font-family: 'Playfair Display';
+  font-size: 150%;
+}
+/*bez tego nie wyswietla sie ramka na okolo daty aktualnej*/
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box; /* 1 */
+    border-width: 0; /* 2 */
+    border-style: solid; /* 2 */
+    border-color: #e2e8f0; /* 2 */
+  }
+ 
+  /*
+  *tło za cyframi
+  */
+   .bg-gray-200 {
+    background-color: #edf2f7;
+  }
+  
+  /*
+  * ramka oznaczający dzisiejszy dzień
+  */
+  .border-orange-400 {
+    border-color: black;
+  }
+  .border-2 {
+    border-width: 2px;
+  }
+  
+  /*kursor*/
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  /*bez tego dni sa wyswietlane jeden po drugim (wszystkie!!)*/
+  .flex {
+    display: flex;
+  }
+
+  /*powoduje wyświetlenie miesięcy w kolumnach*/
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  /*wyśrodkowanie kalendarza*/
+  .justify-center {
+    justify-content: center;
+  }
+  
+  /*wysokosc dnia z aktualną datą*/
+  .h-6 {
+    height: 1.5rem;
+  }
+
+  /*szerokość pol z dniami*/
+  .w-8 {
+    width: 3rem;
+    height: 3rem;
+  }
