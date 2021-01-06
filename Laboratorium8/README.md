@@ -4,7 +4,7 @@ Aplikacja React napisana z wykorzystaniem wybranego przykładu + użycie komendy
 Przykład oryginalny: https://github.com/kissgyorgy/every-day-calendar.
 
 #### Wygląd aplikacji
-Stworzyłam tracker, czyli aplikację, która umożliwia zapisywanie dni, w które udało nam się wykonać wybraną czynność, np. możemy zaznaczać dni, w które ćwiczyliśmy. Jest to sposób na motywowanie siebie do działania.
+Stworzyłam tracker, czyli aplikację, która umożliwia zapisywanie dni, w które udało nam się wykonać wybraną czynność, np. możemy zaznaczać dni, w które ćwiczyliśmy. Jest to sposób na motywowanie siebie do działania. Pierwotnie chciałam stworzyć mood tracker, dlatego taka nazwa projektu.
 
 ![1](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/1.png?raw=true)
 
