@@ -146,3 +146,59 @@ Trzy ostatnie funkcje odnoszą się do zapisywanego imienia. jedną z nich już 
 Na koniec eksportuje wszystkie funkcje, które używane są poza plikiem storage.js.
 
 ![34](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/34.png?raw=true)
+
+
+#### Git difftool - pokazanie modyfikacji
+Nie robiłam swojej aplikacji na zasadzie pobrania oryginalego przykładu i następnie edytowaniu go, a sama tworzyłam projekt, bo nie chciałam bezmyślnie kopiować i nie mam nigdzie na repozytorium oryginalnego projektu, którym się wzorowałam. 
+
+Wykorzystałam komendę git diff do zobaczenia różnicy między moim pierwszym commitem w ramach tego projektu, a ostatnim na chwilę obecną. Wyszło bardzo dużo różnic, więc pokażę tylko fragmenty:
+
+![35](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/35.png?raw=true)
+
+![36](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/36.png?raw=true)
+
+![37](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/37.png?raw=true)
+
+Do wykorzystania komendy git difftool musiałam pobrać jakiś program do pobierania plików, znalazłam winmerge. Zedytowałam zawartość pliku .gitconfig, dodając tam te dwie linijki:
+
+![38](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/38.png?raw=true)
+
+Teraz gdy wywołam komendę git difftool na dwóch commitach pojawi się zapytanie, czy uruchomić winmerge:
+
+![39](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/39.png?raw=true)
+
+Oryginalny przykład zapisałam na komputerze, więc postanowiłam, że za pomocą programu WinMerge pokażę zmiany w plikach. Porównałam cały folder src w moim i w oryginalnym projekcie.
+
+![40](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/40.png?raw=true)
+
+Pliki zaznaczone na żółto to te, które znajdują się i w moim i w projekcie oryginalnym i zostały zmodyfikowane przeze mnie. Pliki podpisane jako "Tylko po prawej" to pliki znajdujące się jedynie w moim folderze src, a pliki "Tylko po lewej" to pliki znajdujące się jedynie w folderze scr oryginalnego projektu. W oryginalnym projekcie komponenty są umieszczone w folderze components, a w moim nie, więc jest to nie do końca dobre porównanie. 
+
+Postanowiłam przenieść komponenty z folderu components, by porównanie pokazało wszystkie różnice:
+
+![42](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/42.png?raw=true)
+
+Teraz jeszcze porównam poszczególne pliki, które mają u mnie inne nazwy, ale odpowiadają konkretnym plikom z oryginalnego projektu. 
+
+Porównanie pliku App.js. Mój plik jest zdecydowanie uboższy, ponieważ dodałam plik, którego nie ma w oryginalnym projekcie i tam zdefiniowałam co trzeba (Home.js).
+
+![41](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/41.png?raw=true)
+
+Jako, że u mnie podobne rzeczy co w App.js oryginalnego projektu ja definiuję w Home.js postanowiłam porównać też te dwa pliku, różnią się one jednak bardzo:
+
+![47](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/47.png?raw=true)
+
+Porównanie pliku context.js:
+
+![43](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/43.png?raw=true)
+
+Porównanie mojego pliku Calendar.js i pliku SimoneCal.jsx, ponieważ tym plikiem z oryginalnego przykładu się wzorowałam do napisania Calendar.js. Plik jest dość spory dlatego nie pokażę całego, ale po lewej znajduje się ogólny wygląd różnic, wszystko na biało to to, co jest takie samo, żółte to różnice.
+
+![44](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/44.png?raw=true)
+
+Porówanie pliku storage.js:
+
+![45](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/45.png?raw=true)
+
+Ostatnim plikiem do porównania jest mój css i css z oryginalnego projektu. Oryginalnie miał on bardzo dużo rzeczy, które ja uznałam za zbędne. Dodałam swoje własne css'y, więc pliki te różnią się bardzo. Mój dodatkowo jest bardzo króciutki. 
+
+![46](https://github.com/kamilanagorska/projektowanie-serwisow-www-nagorska-185ic/blob/main/Laboratorium8/images/46.png?raw=true)
