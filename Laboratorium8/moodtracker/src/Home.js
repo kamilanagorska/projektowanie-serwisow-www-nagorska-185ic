@@ -4,6 +4,8 @@ import { DateContext } from "./context"
 import {
   loadSelectedDays,
   loadTrack,
+  loadName,
+  loadProgress
 } from "./storage"
 
 function Home(){
@@ -16,6 +18,8 @@ function Home(){
     currentDay: today.getDate(),
     selectedDates: loadSelectedDays(),
     trackingThing: loadTrack(),
+    name: loadName(),
+    days: loadProgress(),
   }
 
 

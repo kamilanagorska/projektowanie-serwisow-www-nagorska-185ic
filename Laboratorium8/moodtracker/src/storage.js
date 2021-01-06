@@ -54,13 +54,36 @@ function loadTrack() {
     const tracking = JSON.parse(storedTrack)
     return tracking
 }
-
 function checkTrack(thing){
     const trackingThing = loadTrack()
     if(trackingThing !== thing) {
         saveTrack(thing)
     }
     return trackingThing
+}
+
+function loadProgress(){
+  const days = loadSelectedDays()
+  let nr = days.length
+  return nr - 1
+}
+
+function saveName(name){
+  const nameToSave = JSON.stringify(name)
+  localStorage.setItem("name", nameToSave)
+}
+function loadName() {
+  const storedName = localStorage.getItem("name")
+  if (!storedName) return ""
+  const name = JSON.parse(storedName)
+  return name
+} 
+function checkName(name){
+  const nameToCheck = loadName()
+  if(nameToCheck !== name) {
+      saveName(name)
+  }
+  return nameToCheck
 }
 
 
@@ -70,4 +93,7 @@ export {
   hasDay,
   loadTrack,
   checkTrack,
+  checkName,
+  loadName,
+  loadProgress,
 }
